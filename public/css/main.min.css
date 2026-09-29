@@ -1644,8 +1644,20 @@ html.lenis body {
   color: var(--t-medium);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -1915,8 +1927,20 @@ p span {
 p a {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-medium)), to(var(--t-medium))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-medium)),
+      to(var(--t-medium))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-medium), var(--t-medium)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -1950,8 +1974,20 @@ p a {
 }
 p a.opposite {
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-opp-medium)), to(var(--t-opp-medium))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-opp-medium)),
+      to(var(--t-opp-medium))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-opp-medium), var(--t-opp-medium)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -2007,8 +2043,20 @@ p.t-muted a {
   color: var(--t-muted);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-muted)),
+      to(var(--t-muted))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -2062,8 +2110,20 @@ p.t-opposite-medium a {
   color: var(--t-opp-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-opp-medium)), to(var(--t-opp-medium))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-opp-medium)),
+      to(var(--t-opp-medium))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-opp-medium), var(--t-opp-medium)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -2295,7 +2355,8 @@ p.t-semibold {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -2367,7 +2428,8 @@ p.t-semibold {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -2556,7 +2618,8 @@ p.t-semibold {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -2818,7 +2881,8 @@ p.t-semibold {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -4523,8 +4587,20 @@ form textarea:required:valid {
 .mxd-data-list__content a {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--st-medium)), to(var(--st-medium))),
-    -webkit-gradient(linear, left top, right top, from(var(--accent)), to(var(--accent)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--st-medium)),
+      to(var(--st-medium))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--accent)),
+        to(var(--accent))
+      );
   background:
     -moz-linear-gradient(left, var(--st-medium), var(--st-medium)),
     -moz-linear-gradient(left, var(--accent), var(--accent));
@@ -5041,8 +5117,20 @@ form textarea:required:valid {
   color: var(--t-medium);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -5190,7 +5278,8 @@ form textarea:required:valid {
   -moz-transform: translateX(0) rotate(0);
   -ms-transform: translateX(0) rotate(0);
   transform: translateX(0) rotate(0);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -5747,8 +5836,20 @@ form textarea:required:valid {
   color: var(--t-opp-medium);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-opp-muted)), to(var(--t-opp-muted))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-opp-muted)),
+      to(var(--t-opp-muted))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-opp-muted), var(--t-opp-muted)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -5938,7 +6039,8 @@ form textarea:required:valid {
   display: inline-flex;
   width: 1.9rem;
   height: 1.9rem;
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -7158,15 +7260,20 @@ form textarea:required:valid {
   position: absolute;
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-00-image {
     display: block;
   }
+
   .hero-00-image.image-01 {
-    top: -16%;
-    left: -6%;
+    top: 100%;
+    left: 50%;
     width: 180px;
+    transform: translateX(-50%);
+    margin-top: 20px;
   }
+
   .hero-00-image.image-02 {
     top: -40%;
     left: auto;
@@ -7175,21 +7282,31 @@ form textarea:required:valid {
     z-index: 1;
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .hero-00-image.image-01 {
     width: 260px;
-    top: -14%;
-    left: -9%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
   }
+
   .hero-00-image.image-02 {
     width: 140px;
     right: -6%;
   }
 }
+
 @media only screen and (min-width: 1600px) {
   .hero-00-image.image-01 {
     width: 300px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
   }
+
   .hero-00-image.image-02 {
     width: 180px;
     top: -40%;
@@ -7737,16 +7854,34 @@ form textarea:required:valid {
   --s: 0.8rem;
   height: 3px;
   background:
-    -moz-radial-gradient(circle closest-side, var(--st-muted) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) 100%,
-    -moz-linear-gradient(left, var(--st-muted) 50%, rgba(0, 0, 0, 0) 0) -moz-calc(var(--s) / 2) 0 / calc(2 * var(--s))
-      100%;
+    -moz-radial-gradient(
+        circle closest-side,
+        var(--st-muted) 98%,
+        rgba(0, 0, 0, 0)
+      )
+      0 0 / var(--s) 100%,
+    -moz-linear-gradient(
+        left,
+        var(--st-muted) 50%,
+        rgba(0, 0, 0, 0) 0
+      ) -moz-calc(var(--s) / 2)
+      0 / calc(2 * var(--s)) 100%;
   background:
-    radial-gradient(circle closest-side, var(--st-muted) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) 100%,
-    -webkit-gradient(linear, left top, right top, color-stop(50%, var(--st-muted)), color-stop(0, rgba(0, 0, 0, 0)))
+    radial-gradient(circle closest-side, var(--st-muted) 98%, rgba(0, 0, 0, 0))
+      0 0 / var(--s) 100%,
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        color-stop(50%, var(--st-muted)),
+        color-stop(0, rgba(0, 0, 0, 0))
+      )
       calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
   background:
-    radial-gradient(circle closest-side, var(--st-muted) 98%, rgba(0, 0, 0, 0)) 0 0 / var(--s) 100%,
-    linear-gradient(90deg, var(--st-muted) 50%, rgba(0, 0, 0, 0) 0) calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
+    radial-gradient(circle closest-side, var(--st-muted) 98%, rgba(0, 0, 0, 0))
+      0 0 / var(--s) 100%,
+    linear-gradient(90deg, var(--st-muted) 50%, rgba(0, 0, 0, 0) 0)
+      calc(var(--s) / 2) 0 / calc(2 * var(--s)) 100%;
 }
 .mxd-hero-01__data-btn {
   margin-bottom: 3.1rem;
@@ -9560,8 +9695,16 @@ form textarea:required:valid {
       color-stop(20%, rgba(0, 0, 0, 0)),
       to(rgba(0, 0, 0, 0.6))
     );
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 100%);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.6) 100%);
+    background: -moz-linear-gradient(
+      top,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
   }
 }
 .mxd-hero-06__data {
@@ -10743,8 +10886,20 @@ form textarea:required:valid {
   color: var(--t-muted);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-muted)),
+        to(var(--t-muted))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
@@ -10787,7 +10942,13 @@ form textarea:required:valid {
 }
 .breadcrumbs__nav span.current-item {
   text-decoration: none;
-  background: -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--t-muted)),
+    to(var(--t-muted))
+  );
   background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size:
@@ -10802,8 +10963,20 @@ form textarea:required:valid {
 .breadcrumbs__nav span.current-item a {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-muted)),
+      to(var(--t-muted))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -11081,14 +11254,34 @@ form textarea:required:valid {
   color: var(--pt-t-light-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--pt-t-light-bright)), to(var(--pt-t-light-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--pt-t-light-bright)),
+        to(var(--pt-t-light-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    -moz-linear-gradient(left, var(--pt-t-light-bright), var(--pt-t-light-bright));
+    -moz-linear-gradient(
+        left,
+        var(--pt-t-light-bright),
+        var(--pt-t-light-bright)
+      );
   background:
     linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    linear-gradient(to right, var(--pt-t-light-bright), var(--pt-t-light-bright));
+    linear-gradient(
+      to right,
+      var(--pt-t-light-bright),
+      var(--pt-t-light-bright)
+    );
   -moz-background-size:
     100% 1px,
     0 1px;
@@ -11293,8 +11486,20 @@ form textarea:required:valid {
   color: var(--t-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -11509,8 +11714,20 @@ form textarea:required:valid {
   color: var(--t-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -11669,7 +11886,8 @@ form textarea:required:valid {
     -moz-transform: translateX(-50px);
     -ms-transform: translateX(-50px);
     transform: translateX(-50px);
-    -webkit-transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-slow)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-slow) var(--_animbezier),
@@ -11687,8 +11905,20 @@ form textarea:required:valid {
   .mxd-projects-archive__title p span {
     text-decoration: none;
     background:
-      -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-      -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+      -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      ),
+      -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(var(--t-bright)),
+          to(var(--t-bright))
+        );
     background:
       -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -12032,8 +12262,20 @@ form textarea:required:valid {
   color: var(--t-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -12206,7 +12448,8 @@ form textarea:required:valid {
   -moz-transform: translateX(0) rotate(0);
   -ms-transform: translateX(0) rotate(0);
   transform: translateX(0) rotate(0);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -12368,8 +12611,20 @@ form textarea:required:valid {
   color: var(--t-muted);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-muted)),
+        to(var(--t-muted))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
@@ -12412,7 +12667,13 @@ form textarea:required:valid {
 }
 .mxd-article__breadcrumbs span.current-item {
   text-decoration: none;
-  background: -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--t-muted)),
+    to(var(--t-muted))
+  );
   background: -moz-linear-gradient(left, var(--t-muted), var(--t-muted));
   background: linear-gradient(to right, var(--t-muted), var(--t-muted));
   -moz-background-size:
@@ -12427,8 +12688,20 @@ form textarea:required:valid {
 .mxd-article__breadcrumbs span.current-item a {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-muted)), to(var(--t-muted))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-muted)),
+      to(var(--t-muted))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-muted), var(--t-muted)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -13035,8 +13308,20 @@ form textarea:required:valid {
 .mxd-article-navigation__link span {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -13363,7 +13648,8 @@ form textarea:required:valid {
   box-shadow:
     0 6px 14px rgba(7, 1, 23, 0),
     4px 10px 38px rgba(13, 2, 46, 0);
-  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     box-shadow var(--_animspeed-medium) var(--_animbezier),
@@ -13530,7 +13816,8 @@ form textarea:required:valid {
   background-position: center;
   -moz-background-size: cover;
   background-size: cover;
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -14119,7 +14406,10 @@ form textarea:required:valid {
   height: auto;
   padding: 0;
 }
-.no-touch .mxd-demo-swiper .swiper-slide-active:hover .demo-swiper-slide__image {
+.no-touch
+  .mxd-demo-swiper
+  .swiper-slide-active:hover
+  .demo-swiper-slide__image {
   -webkit-box-shadow:
     0 14px 28px rgba(var(--accent-rgb), 0.25),
     0 10px 10px rgba(var(--accent-rgb), 0.12);
@@ -14136,7 +14426,8 @@ form textarea:required:valid {
   -moz-transform: scale(0.96);
   -ms-transform: scale(0.96);
   transform: scale(0.96);
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -14188,7 +14479,8 @@ form textarea:required:valid {
   box-shadow:
     0 6px 14px rgba(7, 1, 23, 0),
     4px 10px 38px rgba(13, 2, 46, 0);
-  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-box-shadow var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-box-shadow var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     box-shadow var(--_animspeed-medium) var(--_animbezier),
@@ -14234,8 +14526,20 @@ form textarea:required:valid {
 .demo-swiper-slide__descr a span {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -15691,8 +15995,10 @@ form textarea:required:valid {
     transform: translateX(0);
   }
   .no-touch .mxd-projects-list__item:hover .mxd-projects-list__icon i::before {
-    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
-    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
+    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both
+      slideRight;
+    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both
+      slideRight;
     animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
   }
   .no-touch .mxd-projects-list__item:hover .mxd-projects-list__product p {
@@ -15707,10 +16013,16 @@ form textarea:required:valid {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-  .no-touch .mxd-projects-list__item:hover .mxd-projects-list__icon-v2 i::before {
-    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both slideRightUp;
-    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both slideRightUp;
-    animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both slideRightUp;
+  .no-touch
+    .mxd-projects-list__item:hover
+    .mxd-projects-list__icon-v2
+    i::before {
+    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both
+      slideRightUp;
+    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both
+      slideRightUp;
+    animation: var(--_animspeed-slow) var(--_animbezier) 0.3s 1 both
+      slideRightUp;
   }
 }
 .mxd-projects-list__border {
@@ -15784,7 +16096,8 @@ form textarea:required:valid {
     -moz-transform: translateX(-5.4rem);
     -ms-transform: translateX(-5.4rem);
     transform: translateX(-5.4rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -15878,7 +16191,8 @@ form textarea:required:valid {
     -moz-transform: translateX(-5.4rem);
     -ms-transform: translateX(-5.4rem);
     transform: translateX(-5.4rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -15917,7 +16231,8 @@ form textarea:required:valid {
     -moz-transform: translateX(3.2rem);
     -ms-transform: translateX(3.2rem);
     transform: translateX(3.2rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -16015,7 +16330,8 @@ form textarea:required:valid {
     height: 100%;
   }
   .mxd-projects-list__tagslist-v2 ul {
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -16091,7 +16407,8 @@ form textarea:required:valid {
     -moz-transform: translateX(3.2rem);
     -ms-transform: translateX(3.2rem);
     transform: translateX(3.2rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -16266,8 +16583,10 @@ form textarea:required:valid {
     transform: translateX(0);
   }
   .no-touch .mxd-awards-list__item:hover .mxd-awards-list__icon i::before {
-    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
-    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
+    -webkit-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both
+      slideRight;
+    -moz-animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both
+      slideRight;
     animation: var(--_animspeed-slow) var(--_animbezier) 0.2s 1 both slideRight;
   }
 }
@@ -16348,7 +16667,8 @@ form textarea:required:valid {
     -moz-transform: translateX(-5.4rem);
     -ms-transform: translateX(-5.4rem);
     transform: translateX(-5.4rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -16396,7 +16716,8 @@ form textarea:required:valid {
     -moz-transform: translateX(-5.4rem);
     -ms-transform: translateX(-5.4rem);
     transform: translateX(-5.4rem);
-    -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+    -webkit-transition: -webkit-transform var(--_animspeed-medium)
+      var(--_animbezier);
     transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
     -moz-transition:
       transform var(--_animspeed-medium) var(--_animbezier),
@@ -17663,7 +17984,8 @@ form textarea:required:valid {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-slow)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-slow) var(--_animbezier),
@@ -18812,8 +19134,16 @@ form textarea:required:valid {
       from(rgba(var(--base-rgb), 0)),
       to(rgba(var(--base-rgb), 1))
     );
-    background: -moz-linear-gradient(left, rgba(var(--base-rgb), 0) 0, rgba(var(--base-rgb), 1) 100%);
-    background: linear-gradient(to right, rgba(var(--base-rgb), 0) 0, rgba(var(--base-rgb), 1) 100%);
+    background: -moz-linear-gradient(
+      left,
+      rgba(var(--base-rgb), 0) 0,
+      rgba(var(--base-rgb), 1) 100%
+    );
+    background: linear-gradient(
+      to right,
+      rgba(var(--base-rgb), 0) 0,
+      rgba(var(--base-rgb), 1) 100%
+    );
     z-index: 1;
   }
 }
@@ -19136,7 +19466,8 @@ form textarea:required:valid {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-slow)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-slow) var(--_animbezier),
@@ -19221,7 +19552,8 @@ form textarea:required:valid {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-slow)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-slow) var(--_animbezier),
@@ -19275,7 +19607,8 @@ form textarea:required:valid {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-slow)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-slow) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-slow) var(--_animbezier),
@@ -19514,8 +19847,20 @@ form textarea:required:valid {
   color: var(--t-medium);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -19659,7 +20004,8 @@ form textarea:required:valid {
   -ms-transform: rotate(0);
   transform: rotate(0);
   will-change: transform;
-  -webkit-transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
+  -webkit-transition: -webkit-transform var(--_animspeed-medium)
+    var(--_animbezier);
   transition: -webkit-transform var(--_animspeed-medium) var(--_animbezier);
   -moz-transition:
     transform var(--_animspeed-medium) var(--_animbezier),
@@ -19705,7 +20051,8 @@ form textarea:required:valid {
   -moz-border-radius: var(--_radius-m);
   border-radius: var(--_radius-m);
   padding: 3rem;
-  -webkit-transition: -webkit-box-shadow var(--_animspeed-slow) var(--_animbezier);
+  -webkit-transition: -webkit-box-shadow var(--_animspeed-slow)
+    var(--_animbezier);
   transition: -webkit-box-shadow var(--_animspeed-slow) var(--_animbezier);
   -moz-transition:
     box-shadow var(--_animspeed-slow) var(--_animbezier),
@@ -19915,8 +20262,20 @@ form textarea:required:valid {
   color: var(--t-bright);
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright))),
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(var(--t-bright)),
+      to(var(--t-bright))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(0, 0, 0, 0)),
+        to(rgba(0, 0, 0, 0))
+      );
   background:
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright)),
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
@@ -20532,8 +20891,20 @@ form textarea:required:valid {
 .mxd-project__link span {
   text-decoration: none;
   background:
-    -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))),
-    -webkit-gradient(linear, left top, right top, from(var(--t-bright)), to(var(--t-bright)));
+    -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(0, 0, 0, 0)),
+      to(rgba(0, 0, 0, 0))
+    ),
+    -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(var(--t-bright)),
+        to(var(--t-bright))
+      );
   background:
     -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     -moz-linear-gradient(left, var(--t-bright), var(--t-bright));
@@ -20577,5 +20948,130 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .mxd-project__link {
     font-size: 3.4rem;
+  }
+}
+
+/* =========================================================
+   HERO 00 - CUSTOM LOGO + DESCRIPTION POSITION
+   ========================================================= */
+
+/* Keep the hero title area full width */
+@media only screen and (min-width: 768px) {
+  .mxd-hero-00__title-wrap {
+    width: 100% !important;
+  }
+
+  /* Logo becomes part of the normal document flow */
+  .mxd-hero-00__title-wrap .hero-00-image.image-01 {
+    position: relative !important;
+
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+
+    transform: none !important;
+
+    display: block !important;
+
+    width: 180px !important;
+    margin: 35px auto 0 !important;
+
+    z-index: 10;
+  }
+
+  /* Description naturally comes AFTER the logo */
+  .mxd-hero-00__title-wrap .mxd-hero-00__bottom {
+    position: relative !important;
+    width: 100% !important;
+
+    margin-top: 35px !important;
+
+    z-index: 5;
+  }
+
+  /* Keep description centered */
+  .mxd-hero-00__title-wrap .hero-00-manifest {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mxd-hero-00__title-wrap .hero-00-manifest .mxd-manifest {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+/* ---------- Large Desktop ---------- */
+
+@media only screen and (min-width: 1200px) {
+  .mxd-hero-00__title-wrap .hero-00-image.image-01 {
+    width: 260px !important;
+    margin-top: 45px !important;
+  }
+
+  .mxd-hero-00__title-wrap .mxd-hero-00__bottom {
+    margin-top: 45px !important;
+  }
+}
+
+/* ---------- Extra Large Desktop ---------- */
+
+@media only screen and (min-width: 1600px) {
+  .mxd-hero-00__title-wrap .hero-00-image.image-01 {
+    width: 300px !important;
+    margin-top: 55px !important;
+  }
+
+  .mxd-hero-00__title-wrap .mxd-hero-00__bottom {
+    margin-top: 55px !important;
+  }
+}
+
+/* innovation astro img css */
+
+.hero-marquee-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.hero-astronote {
+  position: absolute;
+
+  left: 2%;
+  transform: translateY(-50%);
+
+  width: 150px;
+  pointer-events: none;
+}
+
+.hero-astronote img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-astronote {
+    right: 4%;
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-astronote {
+    right: 5%;
+    width: 190px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero-astronote {
+    right: 6%;
+    width: 220px;
   }
 }

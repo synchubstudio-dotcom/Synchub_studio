@@ -5,9 +5,9 @@ import { Metadata } from "next";
 import AnimatedButton from "@/components/animation/AnimatedButton";
 export const metadata: Metadata = {
   title:
-    "Page Not Found || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Page Not Found || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function NotFoundPage() {
   return (
@@ -55,7 +55,7 @@ export default function NotFoundPage() {
                         <AnimatedButton
                           className="btn btn-anim btn-default btn-accent slide-right-up"
                           text="Let's Go Home"
-                          href="/index-main"
+                          href="/"
                         >
                           <i className="ph-bold ph-arrow-up-right" />
                         </AnimatedButton>

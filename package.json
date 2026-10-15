@@ -1,5 +1,5 @@
 {
-  "name": "rayo-next",
+  "name": "synchub-studio",
   "version": "1.2.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,8 @@
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@hookform/resolvers": "^5.2.2",
+    "@splinetool/react-spline": "^4.1.0",
+    "@splinetool/runtime": "^2.0.79",
     "gsap": "^3.13.0",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
@@ -23,6 +25,7 @@
     "react-toastify": "^11.0.5",
     "split-type": "^0.3.4",
     "swiper": "^12.0.2",
+    "three": "^0.186.1",
     "typed.js": "^2.1.0",
     "ukiyojs": "^4.2.0",
     "zod": "^4.1.12"
@@ -35,6 +38,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "@types/react-modal": "^3.16.3",
+    "@types/three": "^0.186.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
     "typescript": "^5"

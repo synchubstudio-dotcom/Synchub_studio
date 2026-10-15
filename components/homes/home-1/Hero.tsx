@@ -1,7 +1,14 @@
+"use client";
+
 import AnimateRotation from "@/components/animation/AnimateRotation";
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
 import VideoModalButton from "@/components/common/VideoModalButton";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const Robot3D = dynamic(() => import("@/components/3d/Robot3D"), {
+  ssr: false,
+});
 
 export default function Hero() {
   return (
@@ -16,30 +23,15 @@ export default function Hero() {
                 <div className="mxd-hero-01__images mxd-floating-img">
                   <div className="hero-01-image image-01 mxd-floating-img__item loading__fade">
                     <Image
-                      className="mxd-pulse"
+                      className="astro-pulse-subtle"
                       alt="Hero Image"
-                      src="/img/hero/01_hero-img.webp"
-                      width={700}
-                      height={687}
-                    />
-                  </div>
-                  <div className="hero-01-image image-02 mxd-floating-img__item loading__fade">
-                    <Image
-                      className="mxd-move"
-                      alt="Hero Image"
-                      src="/img/hero/02_hero-img.webp"
+                      src="/web/astronote.webp"
                       width={700}
                       height={798}
                     />
                   </div>
-                  <div className="hero-01-image image-03 mxd-floating-img__item loading__fade">
-                    <Image
-                      className="mxd-rotate"
-                      alt="Hero Image"
-                      src="/img/hero/03_hero-img.webp"
-                      width={700}
-                      height={704}
-                    />
+                  <div className="hero-01-image image-02 robot-hero-seated mxd-floating-img__item loading__fade">
+                    <Robot3D />
                   </div>
                 </div>
                 {/* title marquee */}
@@ -141,9 +133,16 @@ export default function Hero() {
                     </AnimateRotation>
                     {/* image */}
                     <Image
-                      className="btn-rotating__image"
-                      alt="Object"
-                      src="/img/icons/300x300_obj-btn-01.webp"
+                      className="btn-rotating__image btn-rotating__image--light"
+                      alt="SyncHUB Studio"
+                      src="/web/brand-logo-black.webp"
+                      width={300}
+                      height={300}
+                    />
+                    <Image
+                      className="btn-rotating__image btn-rotating__image--dark"
+                      alt="SyncHUB Studio"
+                      src="/web/brand-logo-white.webp"
                       width={300}
                       height={300}
                     />

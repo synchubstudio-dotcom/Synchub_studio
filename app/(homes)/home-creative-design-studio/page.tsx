@@ -13,9 +13,9 @@ import Services from "@/components/homes/home-creative-design-studio/Services";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Creative Digital Studio || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Creative Digital Studio || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function HomeCreativeDesignStudioPage() {
   return (

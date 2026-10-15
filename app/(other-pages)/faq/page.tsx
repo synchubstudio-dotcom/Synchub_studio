@@ -5,9 +5,9 @@ import Faqs from "@/components/other-pages/Faqs";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Faqs || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Faqs || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function FaqsPage() {
   return (

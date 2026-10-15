@@ -34,7 +34,7 @@ export default function Features2() {
                           </span>
                         </div>
                         <p className="anim-uni-in-up centered-mobile">
-                          Rayo template packed with smooth animations, modern
+                          SyncHUB template packed with smooth animations, modern
                           design tools and clean code. It&apos;s a flexible,
                           future-proof template that&apos;s easy to customize
                           and a joy to use.
@@ -47,7 +47,7 @@ export default function Features2() {
                 <div className="col-12 col-xl-7 mxd-features-promo__item">
                   <div className="mxd-features-promo__image anim-uni-in-up">
                     <Image
-                      alt="Rayo Image"
+                      alt="SyncHUB Image"
                       width={1614}
                       height={800}
                       src="/img/demo/01_fea-img.webp"

@@ -137,7 +137,7 @@ export default function Hero() {
                     as="p"
                     className="mxd-manifest reveal-type anim-uni-in-up"
                   >
-                    Elevate your digital presence with Rayo - dynamic and
+                    Elevate your digital presence with SyncHUB - dynamic and
                     stylish template designed for creative agencies and personal
                     brands.
                   </RevealText>

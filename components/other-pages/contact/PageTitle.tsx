@@ -45,7 +45,7 @@ export default function PageTitle() {
                       <br />
                       about your project!
                       {/* <a class="btn btn-line-headline slide-right-up anim-no-delay" href="mailto:example@example.com?subject=Message%20from%20your%20site">
-                    <span class="btn-caption">hello@rayo.com</span>
+                    <span class="btn-caption">hello@synchub.com</span>
                     <i class="ph-bold ph-arrow-up-right"></i>
                   </a> */}
                     </h1>
@@ -53,7 +53,7 @@ export default function PageTitle() {
                       className="btn btn-line-headline slide-right-up anim-no-delay"
                       href="mailto:example@example.com?subject=Message%20from%20your%20site"
                     >
-                      <span className="btn-caption">hello@rayo.com</span>
+                      <span className="btn-caption">hello@synchub.com</span>
                       <i className="ph-bold ph-arrow-up-right" />
                     </a>
                     <p className="inner-headline__text t-large t-bright loading__item">

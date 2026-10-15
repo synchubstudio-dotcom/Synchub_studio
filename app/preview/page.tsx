@@ -14,9 +14,9 @@ import Footer1 from "@/components/footers/Footer1";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Preview || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Preview || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function PreviewPage() {
   return (

@@ -56,7 +56,7 @@ export default function FeatureCards() {
                     </div>
                     <div className="mxd-features-cards__image features-image-01">
                       <Image
-                        alt="Rayo Illustration"
+                        alt="SyncHUB Illustration"
                         width={1000}
                         height={843}
                         src="/img/demo/02_fea-img.webp"
@@ -91,7 +91,7 @@ export default function FeatureCards() {
                   <div className="mxd-features-cards__inner justify-end bg-accent radius-l padding-4">
                     <div className="mxd-features-cards__image features-image-02">
                       <Image
-                        alt="Rayo Illustration"
+                        alt="SyncHUB Illustration"
                         width={800}
                         height={513}
                         src="/img/demo/03_fea-img.webp"

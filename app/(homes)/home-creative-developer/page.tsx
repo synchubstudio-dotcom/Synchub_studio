@@ -9,9 +9,9 @@ import Projects from "@/components/homes/home-creative-developer/Projects";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Creative Developer || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Creative Developer || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function HomeCreativeDeveloperPage() {
   return (

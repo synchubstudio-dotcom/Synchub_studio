@@ -8,9 +8,9 @@ import Teammembers from "@/components/other-pages/team/Teammembers";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Team || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Team || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function TeamPage() {
   return (

@@ -18,7 +18,7 @@ export default function Feedback() {
             <div className="mxd-project__content">
               <div className="mxd-project__paragraph medium-text">
                 <p className="anim-uni-in-up">
-                  Working with Rayo team was an absolute pleasure! They took the
+                  Working with SyncHUB team was an absolute pleasure! They took the
                   time to understand our business needs and translated them into
                   a beautifully designed, user-friendly website. The team&apos;s
                   attention to detail, creativity, and technical expertise

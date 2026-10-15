@@ -6471,7 +6471,7 @@ form textarea:required:valid {
   padding: 0 3rem;
   color: var(--t-bright);
   z-index: -1;
-  padding-top: 12.5rem;
+  padding-top: 5rem;
   margin-bottom: 2rem;
 }
 .mxd-footer__fullwidth-text.personal {
@@ -6480,7 +6480,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .mxd-footer__fullwidth-text {
     padding: 0 6rem;
-    padding-top: 10.5rem;
+    padding-top: 5rem;
     margin-bottom: 0;
   }
 }
@@ -6492,7 +6492,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 1600px) {
   .mxd-footer__fullwidth-text {
     padding: 0 9rem;
-    padding-top: 11.1rem;
+    padding-top: 5rem;
     margin-bottom: -1rem;
   }
 }

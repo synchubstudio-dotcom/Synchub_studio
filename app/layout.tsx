@@ -2,9 +2,9 @@ import "../public/css/styles.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+  title: "SyncHUB - Digital Agency & Personal Portfolio",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio",
 };
 const setColorSchemeScript = `
 (function() {
@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: setColorSchemeScript }} />
       </head>
-      <body>
+      <body suppressHydrationWarning>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

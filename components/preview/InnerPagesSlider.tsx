@@ -46,7 +46,7 @@ export default function InnerPagesSlider() {
                   target={slide.target}
                 >
                   <Image
-                    alt="Rayo Image"
+                    alt="SyncHUB Image"
                     width={slide.imgWidth}
                     height={slide.imgHeight}
                     src={slide.img}

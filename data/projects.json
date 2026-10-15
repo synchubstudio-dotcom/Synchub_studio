@@ -117,7 +117,7 @@
     },
     {
       "id": 12,
-      "title": "Rayo Studio",
+      "title": "SyncHUB Studio",
       "subtitle": "Website",
       "preview": {
         "hover": "/img/works/preview/600x730_prv-07.webp",
@@ -376,7 +376,7 @@
       "id": 39,
       "thumb": "/img/works/preview/600x730_prv-06.webp",
       "image": "/img/works/preview/1200x800_prv-06.webp",
-      "title": "Rayo studio portfolio",
+      "title": "SyncHUB studio portfolio",
       "tags": ["IU/UX design", "Development"],
       "date": "2024"
     }

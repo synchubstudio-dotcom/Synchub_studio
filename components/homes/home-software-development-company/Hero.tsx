@@ -124,7 +124,7 @@ export default function Hero() {
                 company
               </p>
               <h1 className="hero-03-headline__title loading__item">
-                <span className="hero-03-headline__hidden">Rayo Studio</span>
+                <span className="hero-03-headline__hidden">SyncHUB Studio</span>
                 <svg
                   className="hero-03-headline__svg-mobile"
                   version="1.1"

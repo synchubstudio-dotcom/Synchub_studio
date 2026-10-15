@@ -88,8 +88,8 @@ export default function Robot3D({ splineSceneUrl = EXPORTED_SPLINE_SCENE_URL }: 
     blueKeyLight.position.set(-3.2, -0.4, 3.2);
     scene.add(blueKeyLight);
 
-    // 5. Soft Purple Accent (skims right side of the head)
-    const purpleRim = new THREE.PointLight(0xa855f7, 2.2, 10);
+    // 5. Lime Green Accent (skims right side of the head)
+    const purpleRim = new THREE.PointLight(0xddf160, 2.2, 10);
     purpleRim.position.set(3.2, 2.0, 0.4);
     scene.add(purpleRim);
 
@@ -192,7 +192,7 @@ export default function Robot3D({ splineSceneUrl = EXPORTED_SPLINE_SCENE_URL }: 
         blueKeyLight.color.setHex(0x93c5fd); // Soft cool studio fill (clean, not oversaturated)
         blueKeyLight.intensity = 2.4;
         redRimLight.color.setHex(0xf43f5e);
-        purpleRim.color.setHex(0xc084fc);
+        purpleRim.color.setHex(0xddf160);
 
         renderer.toneMappingExposure = 1.3;
       } else {

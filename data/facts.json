@@ -11,12 +11,12 @@
       "text": "Studio",
       "href": "/about-us",
       "iconClass": "ph-bold ph-arrow-up-right",
-      "btnClass": "btn btn-anim btn-default btn-outline opposite slide-right-up"
+      "btnClass": "btn btn-anim btn-default btn-outline slide-right-up"
     },
     "cardClass": "mxd-stats-cards__inner align-end bg-accent radius-m padding-4",
     "counterId": "stats-counter-1",
-    "numberClass": "mxd-counter__number mxd-stats-number opposite",
-    "descrClass": "mxd-counter__descr t-140 t-bright opposite",
+    "numberClass": "mxd-counter__number mxd-stats-number",
+    "descrClass": "mxd-counter__descr t-140 t-bright",
     "imageClass": "mxd-stats-cards__image mxd-stats-cards-image-1",
     "colClass": "col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right"
   },

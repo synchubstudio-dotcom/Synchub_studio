@@ -17,7 +17,11 @@ export default function VideoModalButton({
 
   return (
     <>
-      <button onClick={() => setIsOpen(true)} className={buttonClassName}>
+      <button
+        onClick={() => setIsOpen(true)}
+        className={buttonClassName}
+        style={{ border: "none" }}
+      >
         <i className={iconClassName} />
       </button>
       <VideoModal videoSrc={videoSrc} open={isOpen} setOpen={setIsOpen} />

@@ -1,27 +1,66 @@
+"use client";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import footerNav from "@/data/footer-nav.json";
 import socials from "@/data/socials.json";
 import AnimatedButton from "../animation/AnimatedButton";
 import SubscribeForm from "./SubscribeForm";
 
-export default function Footer2({ text = "synchubstudio" }: { text?: string }) {
+export default function Footer2({
+  text = "synchub.studio",
+  showBlocks = false,
+}: {
+  text?: string;
+  showBlocks?: boolean;
+}) {
+  const svgRef = useRef<SVGSVGElement | null>(null);
+  const textRef = useRef<SVGTextElement | null>(null);
+
+  useEffect(() => {
+    const updateViewBox = () => {
+      if (textRef.current && svgRef.current) {
+        const b = textRef.current.getBBox();
+        if (b && b.width > 0) {
+          svgRef.current.setAttribute(
+            "viewBox",
+            `${b.x} ${b.y} ${b.width} ${b.height}`
+          );
+        }
+      }
+    };
+    updateViewBox();
+    if (typeof document !== "undefined" && document.fonts) {
+      document.fonts.ready.then(updateViewBox);
+    }
+  }, [text]);
+
   return (
     <footer id="mxd-footer" className="mxd-footer">
       {/* Footer Block - Fullwidth Text Start */}
       <div className="mxd-footer__text-wrap">
         <div className="fullwidth-text__tl-trigger" />
-        <div className="mxd-footer__fullwidth-text anim-top-to-bottom">
+        <div
+          className="mxd-footer__fullwidth-text anim-top-to-bottom"
+          style={{
+            paddingTop: "100px",
+            paddingBottom: "100px",
+            marginBottom: 0,
+          }}
+        >
           {text !== "alexwalker" ? (
             <svg
+              ref={svgRef}
               className="mxd-footer__svg-v2"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 400 60"
+              viewBox="0 -6 409 73"
+              style={{ overflow: "visible", width: "100%", height: "auto" }}
             >
               <text
-                x="50%"
-                y="42"
-                textAnchor="middle"
+                ref={textRef}
+                x="0"
+                y="52"
+                textAnchor="start"
                 fill="currentColor"
                 fontSize="58"
                 fontWeight="800"
@@ -30,7 +69,7 @@ export default function Footer2({ text = "synchubstudio" }: { text?: string }) {
                   fontFamily: "var(--_font-accent, 'Funnel Display', sans-serif)",
                 }}
               >
-                {text || "synchubstudio"}
+                {text || "synchub.studio"}
               </text>
             </svg>
           ) : (
@@ -74,8 +113,9 @@ export default function Footer2({ text = "synchubstudio" }: { text?: string }) {
         </div>
       </div>
       {/* Footer Block - Fullwidth Text End */}
-      {/* Footer Block - Info Columns Start */}
-      <div className="mxd-footer__footer-blocks">
+      {/* Footer Block - Info Columns Start (Hidden for now) */}
+      {showBlocks && (
+        <div className="mxd-footer__footer-blocks">
         {/* single column */}
         <div className="footer-blocks__column animate-card-3">
           {/* inner card */}
@@ -274,7 +314,8 @@ export default function Footer2({ text = "synchubstudio" }: { text?: string }) {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      )}
       {/* Footer Block - Info Columns End */}
     </footer>
   );

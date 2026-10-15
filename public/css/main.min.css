@@ -103,8 +103,8 @@
   --base-shade--light: #e0dddb;
   --base-opp--light: #161616;
   --base-opp-tint--light: #1c1c1c;
-  --accent--light: #9f8be7;
-  --accent-rgb--light: 159, 139, 231;
+  --accent--light: #ddf160;
+  --accent-rgb--light: 221, 241, 96;
   --additional--light: #ddf160;
   --additional-rgb--light: 221, 241, 96;
   --neutral-transparent--light: rgba(255, 255, 255, 0.3);
@@ -142,8 +142,8 @@
   --base-opp-tint--dark: #ffffff;
   --accent--dark: #ddf160;
   --accent-rgb--dark: 221, 241, 96;
-  --additional--dark: #9f8be7;
-  --additional-rgb--dark: 159, 139, 231;
+  --additional--dark: #ddf160;
+  --additional-rgb--dark: 221, 241, 96;
   --neutral-transparent--dark: rgba(0, 0, 0, 0.3);
   --st-bright--dark: #ffffff;
   --st-medium--dark: #646464;
@@ -177,7 +177,7 @@
   --pt-t-dark-bright: #161616;
   --pt-st-light-bright: #ffffff;
   --pt-st-dark-bright: #161616;
-  --pt-purple-rgb: 159, 139, 231;
+  --pt-purple-rgb: 221, 241, 96;
   --pt-purple-dark-rgb: 33, 10, 113;
   --nl-white: #ffffff;
   --nl-black: #000000;
@@ -3023,8 +3023,8 @@ p.t-semibold {
 .btn-accent {
   background-color: var(--accent);
   border-style: solid;
-  border-color: var(--accent);
-  color: var(--t-opp-bright);
+  border-color: transparent;
+  color: #161616;
 }
 .btn-additional {
   background-color: var(--additional);
@@ -6765,7 +6765,7 @@ form textarea:required:valid {
   align-items: center;
   gap: 0.4rem;
   background-color: var(--accent);
-  color: var(--t-opp-bright);
+  color: #161616;
   height: 3.6rem;
   -moz-border-radius: 1.8rem;
   border-radius: 1.8rem;
@@ -6774,11 +6774,13 @@ form textarea:required:valid {
 .footer-nav__counter svg {
   width: 1.5rem;
   height: 1.5rem;
+  fill: #161616;
+  color: #161616;
 }
 .footer-nav__counter span {
   font-size: 2.2rem;
   letter-spacing: -0.1rem;
-  color: var(--t-opp-bright);
+  color: #161616;
 }
 .footer-blocks__links {
   display: -webkit-box;
@@ -17940,7 +17942,7 @@ form textarea:required:valid {
 }
 .marquee__item.has-caption p {
   font: normal var(--fw-medium) 2.2rem/1.2 var(--_font-accent);
-  color: var(--t-opp-bright);
+  color: #161616;
 }
 .marquee__item.item-vertical {
   width: 400px;

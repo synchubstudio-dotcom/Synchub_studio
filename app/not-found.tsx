@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Page Not Found || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Page Not Found || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function NotFoundPage() {
   return (
@@ -53,7 +53,7 @@ export default function NotFoundPage() {
                       <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                         <Link
                           className="btn btn-anim btn-default btn-accent slide-right-up"
-                          href={`/index-main`}
+                          href="/"
                         >
                           <span className="btn-caption">
                             Let&apos;s Go Home

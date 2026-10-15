@@ -10,9 +10,9 @@ import Solutions from "@/components/portfolios/Solutions";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Project Details || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Project Details || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function ProjectDetailsPage() {
   return (

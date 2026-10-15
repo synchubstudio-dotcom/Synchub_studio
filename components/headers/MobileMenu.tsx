@@ -5,7 +5,7 @@ import menuItems from "@/data/menu.json"; // adjust path accordingly
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import gsap from "gsap";
-import Flip from "gsap/Flip";
+import { Flip } from "gsap/all";
 import { usePathname } from "next/navigation";
 import AnimatedButton from "../animation/AnimatedButton";
 
@@ -216,7 +216,7 @@ export default function MobileMenu() {
                     className="menu-promo__caption fade-in-elm"
                     style={{ transitionDelay: "0.4s" }}
                   >
-                    👋 New Rayo template is here!
+                    👋 New SyncHUB Studio is here!
                     <br />
                     Showcase your projects, services and expertise with impact.
                   </p>

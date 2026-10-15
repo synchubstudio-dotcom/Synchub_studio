@@ -1,15 +1,13 @@
-import PreviewPage from "./preview/page";
+import HomeMainPage from "./(homes)/home-main/page";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title:
-    "Preview || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Main || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
+
 export default function Home() {
-  return (
-    <>
-      <PreviewPage />
-    </>
-  );
+  return <HomeMainPage />;
 }

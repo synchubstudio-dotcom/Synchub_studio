@@ -8,9 +8,9 @@ import Testimonials from "@/components/common/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Work Simple || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Work Simple || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function WorksSimplePage() {
   return (

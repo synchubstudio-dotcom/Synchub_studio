@@ -18,7 +18,7 @@ export default function Features() {
                       <div className="mxd-resp-promo__content">
                         <div className="mxd-resp-promo__manifest anim-uni-in-up">
                           <RevealText as="p" className="reveal-type">
-                            Fully responsive and pixel-perfect Rayo looks great
+                            Fully responsive and pixel-perfect SyncHUB looks great
                             on any device. Your site stays stunning and
                             functional everywhere.
                           </RevealText>
@@ -85,7 +85,7 @@ export default function Features() {
                 <div className="col-12 col-xl-6 mxd-resp-promo__item">
                   <div className="mxd-resp-promo__image anim-uni-in-up">
                     <Image
-                      alt="Rayo Image"
+                      alt="SyncHUB Image"
                       width={1200}
                       height={767}
                       src="/img/demo/01_resp-img.webp"

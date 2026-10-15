@@ -19,9 +19,9 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Main || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Main || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function HomeMainPage() {
   return (

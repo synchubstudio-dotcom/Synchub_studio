@@ -4,9 +4,9 @@ import Footer2 from "@/components/footers/Footer2";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Blog Creative || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Blog Creative || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function BlogCreativePage() {
   return (

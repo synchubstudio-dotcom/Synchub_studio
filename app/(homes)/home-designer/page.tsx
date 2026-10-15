@@ -8,9 +8,9 @@ import Services from "@/components/homes/home-designer/Services";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Designer || Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "Designer || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
   description:
-    "Rayo - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
 };
 export default function HomeDesignerPage() {
   return (

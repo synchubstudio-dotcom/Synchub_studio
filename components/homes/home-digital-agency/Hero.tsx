@@ -104,7 +104,7 @@ export default function Hero() {
                 <Image
                   className="mxd-move"
                   alt="Hero Image"
-                  src="/img/hero/03_hero-img.webp"
+                  src="/web/stamp-wo-bg.svg"
                   width={700}
                   height={704}
                 />

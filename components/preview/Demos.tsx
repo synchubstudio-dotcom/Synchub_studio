@@ -18,7 +18,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/01.webp"
@@ -38,7 +38,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/02.webp"
@@ -66,7 +66,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/03.webp"
@@ -88,7 +88,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/04.webp"
@@ -110,7 +110,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/05.webp"
@@ -135,7 +135,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/06.webp"
@@ -160,7 +160,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/07.webp"
@@ -186,7 +186,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/08.webp"
@@ -208,7 +208,7 @@ export default function Demos() {
               >
                 <div className="mxd-demo-list__image">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/09.webp"
@@ -224,7 +224,7 @@ export default function Demos() {
               <div className="mxd-demo-list__item empty-item animate-card-3">
                 <div className="mxd-demo-list__image image-placeholder">
                   <Image
-                    alt="Rayo Demo Screen"
+                    alt="SyncHUB Demo Screen"
                     width={1000}
                     height={628}
                     src="/img/demo/screens/05.webp"

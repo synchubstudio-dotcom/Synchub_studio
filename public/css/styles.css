@@ -118,3 +118,158 @@ html {
 .loading__fade {
   opacity: 0;
 }
+
+.mxd-footer__fullwidth-text {
+  padding-top: 5rem !important;
+}
+
+/* Hero astronaut custom sizing & subtle animation */
+.hero-01-image.image-01 {
+  width: 110px !important;
+  top: -8% !important;
+  left: -8% !important;
+}
+@media only screen and (min-width: 768px) {
+  .hero-01-image.image-01 {
+    width: 140px !important;
+    top: -22% !important;
+    left: -5% !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-01-image.image-01 {
+    width: 165px !important;
+    top: -20% !important;
+    left: -5% !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .hero-01-image.image-01 {
+    width: 190px !important;
+    top: -18% !important;
+    left: -5% !important;
+  }
+}
+
+.astro-pulse-subtle {
+  animation: astro-subtle 2.5s infinite ease-in-out alternate !important;
+}
+
+@keyframes astro-subtle {
+  from {
+    transform: scale(0.93) translateY(8px);
+  }
+  to {
+    transform: scale(1.05) translateY(-14px);
+  }
+}
+
+/* 3D Robot standing on the right side of the purple pill */
+.hero-01-image.image-02.robot-hero-seated {
+  display: none;
+  pointer-events: none;
+}
+@media only screen and (min-width: 768px) {
+  .hero-01-image.image-02.robot-hero-seated {
+    display: block !important;
+    width: 156px !important;
+    height: 240px !important;
+    top: -94px !important;
+    right: calc(7rem - 146px) !important;
+    z-index: 5 !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hero-01-image.image-02.robot-hero-seated {
+    width: 192px !important;
+    height: 304px !important;
+    top: -118px !important;
+    right: calc(11rem - 192px) !important;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .hero-01-image.image-02.robot-hero-seated {
+    width: 224px !important;
+    height: 352px !important;
+    top: -138px !important;
+    right: calc(13.3rem - 216px) !important;
+  }
+}
+
+
+/* Hero pill ('tech' marquee) matches dark mode accent color (#ddf160 with dark text) */
+.mxd-hero-01__marquee {
+  background-color: var(--accent--dark) !important;
+}
+
+/* Remove border on pill in light mode */
+html:not([color-scheme="dark"]) .mxd-hero-01__marquee,
+[color-scheme="light"] .mxd-hero-01__marquee {
+  border: none !important;
+}
+
+[color-scheme="dark"] .mxd-hero-01__marquee {
+  border: 1px solid var(--base--dark) !important;
+}
+
+.mxd-hero-01__marquee .marquee__item.item-regular,
+.mxd-hero-01__marquee .marquee__item.item-regular p,
+.mxd-hero-01__marquee .marquee__item.item-regular svg {
+  color: var(--t-opp-bright--dark) !important;
+  fill: var(--t-opp-bright--dark) !important;
+}
+
+/* Brand Logo sizing & theme toggle (Header & Footer) */
+.mxd-logo__image {
+  width: 4.6rem !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .mxd-logo__image {
+    width: 5.6rem !important;
+  }
+}
+
+.mxd-logo__image--light {
+  display: block !important;
+}
+
+.mxd-logo__image--dark {
+  display: none !important;
+}
+
+html[color-scheme="dark"] .mxd-logo__image--light,
+[color-scheme="dark"] .mxd-logo__image--light {
+  display: none !important;
+}
+
+html[color-scheme="dark"] .mxd-logo__image--dark,
+[color-scheme="dark"] .mxd-logo__image--dark {
+  display: block !important;
+}
+
+/* Rotating Button (300x300) Brand Logo theme toggle */
+.btn-rotating .btn-rotating__image {
+  object-fit: contain !important;
+}
+
+.btn-rotating__image--light {
+  display: block !important;
+}
+
+.btn-rotating__image--dark {
+  display: none !important;
+}
+
+html[color-scheme="dark"] .btn-rotating__image--light,
+[color-scheme="dark"] .btn-rotating__image--light {
+  display: none !important;
+}
+
+html[color-scheme="dark"] .btn-rotating__image--dark,
+[color-scheme="dark"] .btn-rotating__image--dark {
+  display: block !important;
+}
+

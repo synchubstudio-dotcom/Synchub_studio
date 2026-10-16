@@ -7,7 +7,7 @@ export default function Devider() {
         <div className="mxd-divider">
           <BackgroundParallax
             scale={1.5}
-            className="mxd-divider__image divider-image-1 parallax-img"
+            className="mxd-divider__image hero-section parallax-img"
           >
             {/* <Image class="parallax-img"  alt=""    src="/img/illustrations/1920x1080_divider-01.webp" width="1920" height="1080" /> */}
           </BackgroundParallax>

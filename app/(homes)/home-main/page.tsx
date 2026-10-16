@@ -19,9 +19,9 @@ import Testimonials from "@/components/homes/home-1/Testimonials";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title:
-    "Main || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB.Studio - Digital Agency",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+    "SyncHUB.Studio - Digital Agency is a leading digital agency that specializes in creating innovative and effective digital solutions for businesses of all sizes. Our team of experts is dedicated to helping our clients achieve their goals through cutting-edge technology and creative strategies.",
 };
 export default function HomeMainPage() {
   return (

@@ -2,8 +2,8 @@
   {
     "number": 50,
     "suffix": "+",
-    "description": "Happy clients who\ntrust my work",
-    "image": "/img/illustrations/800x800_card-image-01.webp",
+    "description": "Happy clients who\ntrust our work",
+    "image": "/web/800x800_card-image-01.webp",
 
     "imageWidth": 800,
     "imageHeight": 800,
@@ -21,22 +21,22 @@
     "colClass": "col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right"
   },
   {
-    "number": 80,
+    "number": 92,
     "suffix": "%",
     "description": "Clients come back for\na new projects",
-    "image": "/img/illustrations/800x800_card-image-02.webp",
+    "image": "/web/80-percentage.png",
     "imageWidth": 800,
     "imageHeight": 800,
     "avatars": [
       {
-        "src": "/img/avatars/300x300_ava-02.webp",
+        "src": "/web/300x300_ava-02.webp",
         "alt": "Avatar",
         "width": 300,
         "height": 300
       },
       { "svg": true },
       {
-        "src": "/img/avatars/300x300_ava-01.webp",
+        "src": "/web/300x300_ava-04.webp",
         "alt": "Avatar",
         "width": 300,
         "height": 300
@@ -50,18 +50,13 @@
     "colClass": "col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-left"
   },
   {
-    "number": 5,
+    "number": 15,
     "suffix": "+",
     "description": "Years of professional experience in designing digital products",
-    "image": "/img/illustrations/800x800_card-image-03.webp",
+    "image": "/web/15-years.webp",
     "imageWidth": 800,
     "imageHeight": 800,
-    "button": {
-      "text": "Start New Project",
-      "href": "/contact",
-      "iconClass": "ph-bold ph-arrow-down-right",
-      "btnClass": "btn btn-anim btn-default btn-outline slide-right-down"
-    },
+    
     "cardClass": "mxd-stats-cards__inner bg-base-tint radius-m padding-4",
     "counterId": "stats-counter-3",
     "numberClass": "mxd-counter__number mxd-stats-number",
@@ -70,18 +65,13 @@
     "colClass": "col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item anim-uni-scale-in-right"
   },
   {
-    "number": 70,
+    "number": 100,
     "suffix": "+",
     "description": "Successfully\ncompleted projects",
-    "image": "/img/illustrations/800x800_card-image-04.webp",
+    "image": "/web/astronote.webp",
     "imageWidth": 800,
     "imageHeight": 800,
-    "button": {
-      "text": "Works",
-      "href": "/works-simple",
-      "iconClass": "ph-bold ph-arrow-up-right",
-      "btnClass": "btn btn-anim btn-default btn-outline slide-right-up"
-    },
+    
     "cardClass": "mxd-stats-cards__inner bg-base-tint radius-m padding-4",
     "counterId": "stats-counter-4",
     "numberClass": "mxd-counter__number mxd-stats-number",

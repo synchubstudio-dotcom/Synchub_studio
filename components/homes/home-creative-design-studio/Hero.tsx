@@ -86,7 +86,7 @@ export default function Hero() {
                         <div className="mxd-avatars__item small">
                           <Image
                             alt="Avatar"
-                            src="/img/avatars/300x300_ava-01.webp"
+                            src="/img/avatars/300x300_ava-04.webp"
                             width={300}
                             height={300}
                           />

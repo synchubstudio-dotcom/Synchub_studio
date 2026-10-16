@@ -58,7 +58,7 @@ export default function Services() {
                   <Image
                     className="service-img service-img-m"
                     alt="Service/Feature Image"
-                    src="/img/services/1000x1000_ser-01.webp"
+                    src="/web/services/1000x1000_ser-01.webp"
                     width={1000}
                     height={1000}
                   />

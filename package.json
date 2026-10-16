@@ -40,11 +40,14 @@
     "@types/react-modal": "^3.16.3",
     "@types/three": "^0.186.0",
     "eslint": "^9",
-    "eslint-config-next": "16.0.1",
+    "eslint-config-next": "^14.2.35",
     "typescript": "^5"
   },
   "overrides": {
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2"
+  },
+  "allowScripts": {
+    "unrs-resolver@1.11.1": true
   }
 }

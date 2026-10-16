@@ -3,7 +3,7 @@
     "id": 1,
     "number": 50,
     "suffix": "+",
-    "description": "Happy clients who\ntrust my work",
+    "description": "Happy clients who\ntrust our work",
     "image": "/img/icons/h70_stats-01.webp",
     "imageWidth": 311,
     "imageHeight": 280,
@@ -11,10 +11,10 @@
   },
   {
     "id": 2,
-    "number": 80,
+    "number": 92,
     "suffix": "%",
     "description": "Clients come back for\na new projects",
-    "image": "/img/icons/h70_stats-02.webp",
+    "image": "/img/80-percentage.png",
     "imageWidth": 280,
     "imageHeight": 280,
     "counterId": "stats-counter-2"

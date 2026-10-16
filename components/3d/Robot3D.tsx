@@ -388,7 +388,7 @@ export default function Robot3D({ splineSceneUrl = EXPORTED_SPLINE_SCENE_URL }: 
     const mouseTarget = { x: 0, y: 0 };
     const mouseCurrent = { x: 0, y: 0 };
 
-    let robotScreenPos = {
+    const robotScreenPos = {
       x: typeof window !== "undefined" ? window.innerWidth * 0.72 : 0,
       y: typeof window !== "undefined" ? window.innerHeight * 0.3 : 0,
     };
@@ -428,7 +428,7 @@ export default function Robot3D({ splineSceneUrl = EXPORTED_SPLINE_SCENE_URL }: 
 
     // ================== ANIMATION LOOP ==================
     let animationFrameId: number;
-    let clock = new THREE.Clock();
+    const clock = new THREE.Clock();
     let blinkTimer = 0;
 
     const animate = () => {

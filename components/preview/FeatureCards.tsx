@@ -36,13 +36,13 @@ export default function FeatureCards() {
                             <stop
                               offset={0}
                               style={{
-                                stopColor: "#9f8be7",
+                                stopColor: "#ddf160",
                                 stopOpacity: "0.6",
                               }}
                             />
                             <stop
                               offset={1}
-                              style={{ stopColor: "#9f8be7", stopOpacity: 0 }}
+                              style={{ stopColor: "#ddf160", stopOpacity: 0 }}
                             />
                           </radialGradient>
                           <circle
@@ -215,13 +215,13 @@ export default function FeatureCards() {
                             <stop
                               offset={0}
                               style={{
-                                stopColor: "#9f8be7",
+                                stopColor: "#ddf160",
                                 stopOpacity: "0.6",
                               }}
                             />
                             <stop
                               offset={1}
-                              style={{ stopColor: "#9f8be7", stopOpacity: 0 }}
+                              style={{ stopColor: "#ddf160", stopOpacity: 0 }}
                             />
                           </radialGradient>
                           <circle

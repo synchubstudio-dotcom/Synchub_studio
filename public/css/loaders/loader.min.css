@@ -36,8 +36,8 @@
   --base-shade--light: #e0dddb;
   --base-opp--light: #161616;
   --base-opp-tint--light: #1c1c1c;
-  --accent--light: #9f8be7;
-  --accent-rgb--light: 159, 139, 231;
+  --accent--light: #ddf160;
+  --accent-rgb--light: 221, 241, 96;
   --additional--light: #ddf160;
   --additional-rgb--light: 221, 241, 96;
   --neutral-transparent--light: rgba(255, 255, 255, 0.3);
@@ -75,8 +75,8 @@
   --base-opp-tint--dark: #ffffff;
   --accent--dark: #ddf160;
   --accent-rgb--dark: 221, 241, 96;
-  --additional--dark: #9f8be7;
-  --additional-rgb--dark: 159, 139, 231;
+  --additional--dark: #ddf160;
+  --additional-rgb--dark: 221, 241, 96;
   --neutral-transparent--dark: rgba(0, 0, 0, 0.3);
   --st-bright--dark: #ffffff;
   --st-medium--dark: #646464;
@@ -110,7 +110,7 @@
   --pt-t-dark-bright: #161616;
   --pt-st-light-bright: #ffffff;
   --pt-st-dark-bright: #161616;
-  --pt-purple-rgb: 159, 139, 231;
+  --pt-purple-rgb: 221, 241, 96;
   --pt-purple-dark-rgb: 33, 10, 113;
   --nl-white: #ffffff;
   --nl-black: #000000;

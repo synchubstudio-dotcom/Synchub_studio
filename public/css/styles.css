@@ -23,6 +23,32 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Replace purple with green accent across both light and dark themes */
+:root {
+  --accent--light: #ddf160 !important;
+  --accent-rgb--light: 221, 241, 96 !important;
+  --additional--dark: #ddf160 !important;
+  --additional-rgb--dark: 221, 241, 96 !important;
+  --pt-purple-rgb: 221, 241, 96 !important;
+}
+
+html[color-scheme="light"],
+[color-scheme="light"],
+html:not([color-scheme="dark"]) {
+  --accent: #ddf160 !important;
+  --accent-rgb: 221, 241, 96 !important;
+  --additional: #ddf160 !important;
+  --additional-rgb: 221, 241, 96 !important;
+}
+
+html[color-scheme="dark"],
+[color-scheme="dark"] {
+  --accent: #ddf160 !important;
+  --accent-rgb: 221, 241, 96 !important;
+  --additional: #ddf160 !important;
+  --additional-rgb: 221, 241, 96 !important;
+}
 .mxd-nav__wrap {
   display: block;
   pointer-events: none;
@@ -120,7 +146,13 @@ html {
 }
 
 .mxd-footer__fullwidth-text {
-  padding-top: 5rem !important;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+  margin-bottom: 0 !important;
+}
+
+.mxd-footer__svg-v2 {
+  overflow: visible !important;
 }
 
 /* Hero astronaut custom sizing & subtle animation */
@@ -272,4 +304,120 @@ html[color-scheme="dark"] .btn-rotating__image--dark,
 [color-scheme="dark"] .btn-rotating__image--dark {
   display: block !important;
 }
+
+/* Green Box (bg-accent) high contrast: All text, counter numbers, buttons, and icons in black */
+.mxd-stats-cards__inner.bg-accent,
+.bg-accent {
+  color: #161616 !important;
+}
+
+.mxd-stats-cards__inner.bg-accent .mxd-stats-number,
+.mxd-stats-cards__inner.bg-accent .mxd-counter__number,
+.mxd-stats-cards__inner.bg-accent .mxd-counter__descr,
+.mxd-stats-cards__inner.bg-accent .mxd-counter__number *,
+.mxd-stats-cards__inner.bg-accent .mxd-counter__descr *,
+.mxd-stats-cards__inner.bg-accent p,
+.mxd-stats-cards__inner.bg-accent span {
+  color: #161616 !important;
+}
+
+.mxd-stats-cards__inner.bg-accent .btn,
+.mxd-stats-cards__inner.bg-accent .btn-outline,
+.mxd-stats-cards__inner.bg-accent .btn-outline.opposite {
+  border-color: #161616 !important;
+  color: #161616 !important;
+}
+
+.mxd-stats-cards__inner.bg-accent .btn *,
+.mxd-stats-cards__inner.bg-accent .btn i,
+.mxd-stats-cards__inner.bg-accent .btn svg,
+.mxd-stats-cards__inner.bg-accent .btn-caption,
+.mxd-stats-cards__inner.bg-accent .btn-anim__block,
+.mxd-stats-cards__inner.bg-accent .btn-anim__letter {
+  color: #161616 !important;
+  fill: #161616 !important;
+}
+
+.mxd-stats-cards__inner.bg-accent .btn:hover {
+  background-color: #161616 !important;
+  border-color: #161616 !important;
+  color: #ddf160 !important;
+}
+
+.mxd-stats-cards__inner.bg-accent .btn:hover *,
+.mxd-stats-cards__inner.bg-accent .btn:hover i,
+.mxd-stats-cards__inner.bg-accent .btn:hover svg,
+.mxd-stats-cards__inner.bg-accent .btn:hover .btn-caption,
+.mxd-stats-cards__inner.bg-accent .btn:hover .btn-anim__block,
+.mxd-stats-cards__inner.bg-accent .btn:hover .btn-anim__letter {
+  color: #ddf160 !important;
+  fill: #ddf160 !important;
+}
+
+/* Also handle services stack and any general bg-accent cards */
+.mxd-services-stack__inner.bg-accent h3,
+.mxd-services-stack__inner.bg-accent h3 *,
+.mxd-services-stack__inner.bg-accent p,
+.mxd-services-stack__inner.bg-accent .tag,
+.mxd-services-stack__inner.bg-accent .tag * {
+  color: #161616 !important;
+  border-color: #161616 !important;
+}
+
+/* Marquee Slider green cards ("Inspiring ideas" & "Creative minds"): All text & icons in black */
+.marquee__item.has-caption,
+.marquee__item.has-caption p,
+.marquee__item.has-caption span,
+.marquee__item.has-caption a,
+.marquee__item.has-caption i,
+.marquee__item.has-caption svg {
+  color: #161616 !important;
+  fill: #161616 !important;
+}
+
+/* Global green background contrast (buttons, tags, tech logos, selection) */
+.btn-accent,
+.btn-accent *,
+.btn-accent i,
+.btn-accent svg,
+.tag-accent,
+.tag-accent *,
+.mxd-tech-stack-cards__logo,
+.mxd-demo-list__item.item-accent,
+.footer-nav__counter,
+.footer-nav__counter *,
+.footer-nav__counter span,
+.footer-nav__counter svg,
+.footer-nav__counter svg path {
+  color: #161616 !important;
+  fill: #161616 !important;
+}
+
+/* Remove border from video play button & accent buttons */
+.showreel-trigger,
+.showreel-trigger.btn,
+.mxd-hero-01__video-btn .btn,
+.mxd-hero-01__video-btn button,
+.btn-round.btn-accent,
+button.showreel-trigger {
+  border: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-accent {
+  border-color: transparent !important;
+}
+
+::selection {
+  background-color: var(--accent) !important;
+  color: #161616 !important;
+}
+::-moz-selection {
+  background-color: var(--accent) !important;
+  color: #161616 !important;
+}
+
+
 

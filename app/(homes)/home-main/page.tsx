@@ -34,12 +34,11 @@ export default function HomeMainPage() {
         <Marquee />
         <Projects />
         <ServicesStack />
-        <Approch />
+        
         <MarqueeSlider />
-        <Awards />
+        
         <Testimonials />
-        <MarqueeSection2 />
-        <Partners />
+        
         <Blogs />
         <Cta />
       </main>

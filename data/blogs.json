@@ -4,7 +4,7 @@
       "id": 17,
       "imageClass": "blog-preview-image-1",
       "tags": ["Concept", "Editorial"],
-      "imgSrc": "/img/blog/preview/1000x1250_prv-01.webp",
+      "imgSrc": "/web/blog/blog-01.webp",
       "title": {
         "before": "Frontend innovations",
         "after": " and user journeys"
@@ -14,7 +14,7 @@
       "id": 18,
       "imageClass": "blog-preview-image-2",
       "tags": ["UI/UX", "Development"],
-      "imgSrc": "/img/blog/preview/1000x1250_prv-02.webp",
+      "imgSrc": "/web/blog/blog-02.webp",
       "title": {
         "before": "Branding in creating",
         "highlight": "digital experiences"
@@ -23,7 +23,7 @@
     {
       "id": 19,
       "imageClass": "blog-preview-image-3",
-      "imgSrc": "/img/blog/preview/1000x1250_prv-03.webp",
+      "imgSrc": "/web/blog/blog-03.webp",
       "tags": ["News", "AI"],
       "title": {
         "before": "Elevating ",

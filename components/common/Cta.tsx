@@ -11,7 +11,7 @@ export default function Cta() {
         {/* Block - CTA Start */}
         <div className="mxd-block">
           <div className="mxd-promo">
-            <div className="mxd-promo__inner anim-zoom-out-container">
+            <div className="mxd-promo__inner anim-zoom-out-container radius-l">
               {/* background */}
               <div className="mxd-promo__bg" />
               {/* caption */}
@@ -20,7 +20,7 @@ export default function Cta() {
                   <span className="mxd-promo__icon">
                     <Image
                       alt="Icon"
-                      src="/img/icons/300x300_obj-cta-01.webp"
+                      src="/web/800x800_card-image-01.webp"
                       width={300}
                       height={300}
                     />
@@ -47,14 +47,14 @@ export default function Cta() {
                 <Image
                   className="promo-image promo-image-1"
                   alt="Image"
-                  src="/img/illustrations/cta-img-01.webp"
+                  src="/web/astronote.webp"
                   width={800}
                   height={912}
                 />
                 <Image
                   className="promo-image promo-image-2"
                   alt="Image"
-                  src="/img/illustrations/cta-img-02.webp"
+                  src="/web/brand-logo-white.webp"
                   width={600}
                   height={601}
                 />

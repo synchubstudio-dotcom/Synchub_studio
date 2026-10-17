@@ -412,13 +412,13 @@
   background-image: url(/img/works/preview/1400x1400_prv-07.webp);
 }
 .blog-preview-image-1 {
-  background-image: url(/img/blog/preview/1000x1250_prv-01.webp);
+  background-image: url(/web/blog/blog-01.webp);
 }
 .blog-preview-image-2 {
-  background-image: url(/img/blog/preview/1000x1250_prv-02.webp);
+  background-image: url(/web/blog/blog-02.webp);
 }
 .blog-preview-image-3 {
-  background-image: url(/img/blog/preview/1000x1250_prv-03.webp);
+  background-image: url(/web/blog/blog-03.webp);
 }
 .headline-img-01::before {
   background-image: url(/img/illustrations/400x200_hdl-01.webp);
@@ -6275,7 +6275,7 @@ form textarea:required:valid {
   background-position: left center;
   -moz-background-size: cover;
   background-size: cover;
-  background-image: url(/img/backgrounds/1440x900_cta-01.webp);
+  background-image: url(/web/1440x900_cta-01.webp);
 }
 @media only screen and (min-width: 1200px) {
   .mxd-promo__bg {

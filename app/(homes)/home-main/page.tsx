@@ -34,7 +34,7 @@ export default function HomeMainPage() {
         <Marquee />
         <Projects />
         <ServicesStack />
-        
+        <Approch />
         <MarqueeSlider />
         
         <Testimonials />

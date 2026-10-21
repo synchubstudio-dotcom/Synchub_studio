@@ -119,6 +119,7 @@ export default function Hero() {
                   autoPlay
                   loop
                   muted
+                  playsInline
                   poster="video/540x310_video-01.webp"
                 >
                   <source type="video/mp4" src="video/540x310_video-01.mp4" />
@@ -127,7 +128,7 @@ export default function Hero() {
                 </video>
                 <div className="mxd-hero-08__video-btn">
                   <VideoModalButton
-                    videoSrc="https://vimeo.com/65036292"
+                    videoSrc="/video/logomotion-720p.mp4"
                     iconClassName="ph-fill ph-play"
                     buttonClassName="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
                   />

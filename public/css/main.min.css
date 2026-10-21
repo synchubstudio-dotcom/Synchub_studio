@@ -360,6 +360,9 @@
 .hero-section{
   background-image: url(/web/hero-section03.jpg);
 }
+.contact-bg{
+  background-image: url(/web/bg_contact.webp);
+}
 .divider-image-1 {
   background-image: url(/img/illustrations/1920x1080_divider-01.webp);
 }

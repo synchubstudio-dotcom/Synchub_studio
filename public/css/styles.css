@@ -100,11 +100,12 @@ html[color-scheme="dark"],
 .videoModal__overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(14px);
   display: grid;
   place-items: center;
-  overflow: hidden; /* prevent overlay scrollbar */
-  z-index: 111;
+  overflow: hidden;
+  z-index: 9999;
 }
 
 /* Transparent content, no internal scroll */
@@ -112,15 +113,162 @@ html[color-scheme="dark"],
   background: transparent;
   border: none;
   outline: none;
-  overflow: hidden; /* prevent content scrollbar */
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Responsive 16:9 player that never exceeds viewport */
+/* Dynamic responsive player container */
 .videoModal__playerWrap {
-  max-width: 1200px;
-  width: min(90vw, 1600px);
-  aspect-ratio: 16 / 9; /* modern browsers */
   position: relative;
+  background: #000;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 50px rgba(221, 241, 96, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.videoModal__playerWrap--vertical {
+  height: min(85vh, 760px);
+  aspect-ratio: 9 / 16;
+  max-width: 90vw;
+}
+
+.videoModal__playerWrap--horizontal {
+  width: min(90vw, 1100px);
+  aspect-ratio: 16 / 9;
+  max-height: 85vh;
+}
+
+.videoModal__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+.videoModal__closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 20;
+  transition: all 0.25s ease;
+}
+
+.videoModal__closeBtn:hover {
+  background: #ddf160;
+  color: #000;
+  transform: scale(1.08) rotate(90deg);
+  border-color: #ddf160;
+}
+
+.videoModal__centerPlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(18, 18, 20, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ddf160;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.videoModal__controlsBar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 18px;
+  background: rgba(18, 18, 20, 0.78);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 40px;
+  z-index: 20;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.videoModal__btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+.videoModal__btn--play {
+  background: #ddf160;
+  color: #000;
+}
+
+.videoModal__btn--play:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(221, 241, 96, 0.5);
+}
+
+.videoModal__btn--sound {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.videoModal__btn--sound:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.08);
+}
+
+.videoModal__progressTrack {
+  width: 110px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.videoModal__progressBar {
+  height: 100%;
+  background: #ddf160;
+  border-radius: 3px;
+  transition: width 0.1s linear;
 }
 .swiper-navigation-icon {
   display: none;

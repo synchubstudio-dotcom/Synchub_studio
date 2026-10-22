@@ -231,19 +231,12 @@ export default function MobileMenu() {
                       autoPlay
                       loop
                       muted
-                      poster="video/540x310_video-01.webp"
+                      playsInline
+                      poster="/video/logomotion-poster.webp"
                     >
                       <source
                         type="video/mp4"
-                        src="video/540x310_video-01.mp4"
-                      />
-                      <source
-                        type="video/webm"
-                        src="video/540x310_video-01.webm"
-                      />
-                      <source
-                        type="video/ogv"
-                        src="video/540x310_video-01.ogv"
+                        src="/video/logomotion-720p.mp4"
                       />
                     </video>
                   </div>

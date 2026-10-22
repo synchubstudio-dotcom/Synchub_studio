@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import AnimateRotation from "@/components/animation/AnimateRotation";
 import VelocityMarquee from "@/components/animation/VelocityMarquee";
-import VideoModalButton from "@/components/common/VideoModalButton";
+import VideoModal from "@/components/common/VideoModal";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 
@@ -11,6 +12,7 @@ const Robot3D = dynamic(() => import("@/components/3d/Robot3D"), {
 });
 
 export default function Hero() {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   return (
     <>
       <div className="mxd-section mxd-hero-section mxd-hero-fullheight">
@@ -148,10 +150,16 @@ export default function Hero() {
                     />
                   </a>
                 </div>
-                <div className="mxd-hero-01__data-descr loading__fade">
+                <div
+                  className="mxd-hero-01__data-descr loading__fade"
+                  style={{ width: "auto", maxWidth: "560px" }}
+                >
                   <p className="t-bright">
-                    We are a creative digital agency specializing in innovative
-                    design and cutting-edge development.
+                    From ambitious ideas to enterprise-scale platforms,
+                    <br className="d-none d-md-inline" />{" "}
+                    we create digital experiences that are fast,
+                    <br className="d-none d-md-inline" />{" "}
+                    scalable, and built for long-term growth.
                   </p>
                 </div>
                 <div className="mxd-hero-01__data-socials loading__fade">
@@ -228,7 +236,11 @@ export default function Hero() {
                   </ul>
                 </div>
               </div>
-              <div className="mxd-hero-01__video-wrap loading__item">
+              <div
+                className="mxd-hero-01__video-wrap loading__item"
+                style={{ cursor: "pointer" }}
+                onClick={() => setIsVideoModalOpen(true)}
+              >
                 <video
                   className="mxd-hero-01__video"
                   preload="auto"
@@ -236,16 +248,30 @@ export default function Hero() {
                   loop
                   muted
                   playsInline
-                  poster="video/540x310_video-01.webp"
+                  poster="/video/logomotion-poster.webp"
                 >
-                  <source type="video/mp4" src="video/540x310_video-01.mp4" />
-                  <source type="video/webm" src="video/540x310_video-01.webm" />
-                  <source type="video/ogv" src="video/540x310_video-01.ogv" />
+                  <source type="video/mp4" src="/video/logomotion-720p.mp4" />
                 </video>
                 <div className="mxd-hero-01__video-btn">
-                  <VideoModalButton videoSrc="/video/logomotion-720p.mp4" />
+                  <button
+                    type="button"
+                    className="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
+                    style={{ border: "none" }}
+                    aria-label="Play showreel video"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsVideoModalOpen(true);
+                    }}
+                  >
+                    <i className="ph-fill ph-play" />
+                  </button>
                 </div>
               </div>
+              <VideoModal
+                videoSrc="/video/logomotion-720p.mp4"
+                open={isVideoModalOpen}
+                setOpen={setIsVideoModalOpen}
+              />
             </div>
           </div>
         </div>

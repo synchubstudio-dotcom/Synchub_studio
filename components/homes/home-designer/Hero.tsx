@@ -1,12 +1,13 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import VideoModalButton from "@/components/common/VideoModalButton";
+import VideoModal from "@/components/common/VideoModal";
 
 export default function Hero() {
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const fadeOutRefs = useRef<Array<HTMLDivElement | null>>([]);
   const scaleOutRefs = useRef<Array<HTMLDivElement | null>>([]);
 
@@ -109,6 +110,8 @@ export default function Hero() {
               </div>
               <div
                 className="mxd-hero-08__video-wrap hero-08-scale-out-scroll loading__item"
+                style={{ cursor: "pointer" }}
+                onClick={() => setIsVideoModalOpen(true)}
                 ref={(el) => {
                   scaleOutRefs.current[0] = el;
                 }}
@@ -120,20 +123,30 @@ export default function Hero() {
                   loop
                   muted
                   playsInline
-                  poster="video/540x310_video-01.webp"
+                  poster="/video/logomotion-poster.webp"
                 >
-                  <source type="video/mp4" src="video/540x310_video-01.mp4" />
-                  <source type="video/webm" src="video/540x310_video-01.webm" />
-                  <source type="video/ogv" src="video/540x310_video-01.ogv" />
+                  <source type="video/mp4" src="/video/logomotion-720p.mp4" />
                 </video>
                 <div className="mxd-hero-08__video-btn">
-                  <VideoModalButton
-                    videoSrc="/video/logomotion-720p.mp4"
-                    iconClassName="ph-fill ph-play"
-                    buttonClassName="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
-                  />
+                  <button
+                    type="button"
+                    className="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
+                    style={{ border: "none" }}
+                    aria-label="Play showreel video"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setIsVideoModalOpen(true);
+                    }}
+                  >
+                    <i className="ph-fill ph-play" />
+                  </button>
                 </div>
               </div>
+              <VideoModal
+                videoSrc="/video/logomotion-720p.mp4"
+                open={isVideoModalOpen}
+                setOpen={setIsVideoModalOpen}
+              />
             </div>
             <div className="mxd-hero-08__tl-trigger" />
           </div>

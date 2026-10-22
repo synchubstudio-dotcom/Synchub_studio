@@ -45,8 +45,10 @@ export default function About() {
                       as="p"
                       className="mxd-manifest reveal-type anim-uni-in-up"
                     >
-                      We are a creative digital agency specializing in
-                      innovative design and cutting-edge development.
+                      we combine strategy,
+                       AI, design, and engineering 
+                       to help startups and enterprises launch products 
+                       that people love and businesses trust.
                     </RevealText>
                     <div className="mxd-manifest__controls anim-uni-in-up">
                       <AnimatedButton

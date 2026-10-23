@@ -63,7 +63,7 @@ export default function BlogDetails() {
               <div className="mxd-article__thumb loading__fade">
                 <Image
                   alt="Article Thumbnail"
-                  src="/img/blog/article/1920x1280_tm-01.webp"
+                  src="/web/hero-section03.jpg"
                   width={1920}
                   height={1280}
                 />
@@ -179,7 +179,7 @@ export default function BlogDetails() {
                   <div className="block-image__container">
                     <Image
                       alt="Article Image"
-                      src="/img/blog/article/1920x1280_img-01.webp"
+                      src="/web/bg_contact.webp"
                       width={1920}
                       height={1280}
                     />
@@ -222,7 +222,7 @@ export default function BlogDetails() {
                   <div className="block-image__container">
                     <Image
                       alt="Article Image"
-                      src="/img/blog/article/1200x1200_img-01.webp"
+                      src="/web/article/1200x1200_img-01.webp"
                       width={1200}
                       height={1200}
                     />
@@ -235,7 +235,7 @@ export default function BlogDetails() {
                   <div className="block-image__container">
                     <Image
                       alt="Article Image"
-                      src="/img/blog/article/1200x1200_img-02.webp"
+                      src="/web/article/1200x1200_img-02.webp"
                       width={1200}
                       height={1200}
                     />
@@ -357,44 +357,7 @@ export default function BlogDetails() {
               </div>
             </div>
             {/* Article Author End */}
-            {/* Article Navigation Start */}
-            <div className="mxd-article-navigation">
-              <div className="container-fluid p-0">
-                <div className="row g-0">
-                  <div className="col-6 mxd-article-navigation__navitem left">
-                    <AnimatedButton
-                      className="btn btn-line-small btn-muted anim-no-delay slide-left"
-                      as={"a"}
-                      text="Prev"
-                      position={"previous"}
-                    >
-                      <i className="ph ph-arrow-left" />
-                    </AnimatedButton>
-                    <a className="mxd-article-navigation__link" href="#">
-                      <span>
-                        Designing for the future of interactive digital spaces
-                      </span>
-                    </a>
-                  </div>
-                  <div className="col-6 mxd-article-navigation__navitem right">
-                    <AnimatedButton
-                      className="btn btn-line-small btn-muted anim-no-delay slide-right"
-                      as={"a"}
-                      text="Next"
-                      position={"next"}
-                    >
-                      <i className="ph ph-arrow-right" />
-                    </AnimatedButton>
-                    <a className="mxd-article-navigation__link" href="#">
-                      <span>
-                        Mastering the art of minimalist web design with impact
-                      </span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Article Navigation End */}
+            
             {/* Article Comments Start */}
             <Comments />
             {/* Article Comments End */}

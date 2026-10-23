@@ -130,16 +130,7 @@ export default function Comments() {
           </ul>
         </div>
       </div>
-      <div className="mxd-article-comments__respond">
-        <h3>What do you think?</h3>
-        <p>
-          Please leave a reply. Your email address will not be published.
-          Required fields are marked *
-        </p>
-        <div className="comments-respond__form">
-          <CommentForm />
-        </div>
-      </div>
+      
     </div>
   );
 }

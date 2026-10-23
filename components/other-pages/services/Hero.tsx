@@ -62,7 +62,7 @@ export default function Hero() {
       </div>
       {/* Section - Inner Page Headline End */}
       {/* Section - Inner Page Statistics Start */}
-      <div className="mxd-section mxd-section-inner-stats overflow-hidden">
+      <div className="mxd-section mxd-section-inner-stats">
         <div className="mxd-container grid-container">
           {/* Block - Inner Page Statistics Start */}
           <div className="mxd-block">
@@ -80,7 +80,7 @@ export default function Hero() {
                           <div className="row gx-0">
                             {/* item */}
                             <div className="col-12 col-xl-7 mxd-stats-cards__item mxd-grid-item">
-                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
+                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 shadow-md">
                                 <div className="mxd-counter">
                                   <p
                                     id="stats-counter-3"
@@ -107,7 +107,7 @@ export default function Hero() {
                                 <div className="mxd-stats-cards__image mxd-stats-cards-image-3">
                                   <Image
                                     alt="Illustration"
-                                    src="/img/illustrations/800x800_card-image-03.webp"
+                                    src="/web/15-years.webp"
                                     width={800}
                                     height={800}
                                   />
@@ -116,7 +116,7 @@ export default function Hero() {
                             </div>
                             {/* item */}
                             <div className="col-12 col-xl-5 mxd-stats-cards__item mxd-grid-item">
-                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4">
+                              <div className="mxd-stats-cards__inner bg-base-tint radius-m padding-4 shadow-md">
                                 <div className="mxd-counter">
                                   <p
                                     id="stats-counter-4"
@@ -142,7 +142,7 @@ export default function Hero() {
                                 <div className="mxd-stats-cards__image mxd-stats-cards-image-4">
                                   <Image
                                     alt="Illustration"
-                                    src="/img/illustrations/800x800_card-image-04.webp"
+                                    src="/web/astronote.webp"
                                     width={800}
                                     height={800}
                                   />

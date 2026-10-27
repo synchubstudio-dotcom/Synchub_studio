@@ -2,42 +2,42 @@
   "projects1": [
     {
       "id": 1,
-      "title": "Creative studio",
-      "description": "template for modern agencies",
+      "title": "Creative direction",
+      "description": "for modern agencies",
       "previewClass": "preview-image-1",
-      "tags": ["UI/UX", "Web design", "Illustrations"],
+      "tags": ["UI/UX", "Web design", "Mobile Applications"],
       "anim": "anim-uni-in-up"
     },
     {
       "id": 2,
       "title": "Interactive concept",
-      "description": "powered by AI",
+      "description": "building immersive experiences",
       "previewClass": "preview-image-2",
-      "tags": ["Sora", "AI", "Editorial"],
+      "tags": ["3D", "Design", "Effects"],
       "anim": "anim-uni-in-up"
     },
     {
       "id": 3,
       "title": "Mobile app design",
-      "description": "for a cross-platform solution",
+      "description": "for a cross-platform solutions",
       "previewClass": "preview-image-3",
-      "tags": ["UI/UX", "Design", "Android"],
+      "tags": ["UI/UX", "ios", "Android"],
       "anim": ""
     },
     {
       "id": 4,
-      "title": "NFT project",
-      "description": "branding",
+      "title": "Branding",
+      "description": "projects for startups and enterprises",
       "previewClass": "preview-image-4",
-      "tags": ["Brand identity", "Style guides"],
+      "tags": ["Visual identity", "Branding", "Style guides"],
       "anim": "anim-uni-in-up"
     },
     {
       "id": 5,
-      "title": "Illustrations set",
+      "title": "Design set",
       "description": "for digital and print use.",
       "previewClass": "preview-image-5",
-      "tags": ["Illustrations", "Design", "Packaging"],
+      "tags": ["Graphics", "Design", "Packaging"],
       "anim": "anim-uni-in-up"
     },
     {

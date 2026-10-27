@@ -8,7 +8,7 @@
     "imageWidth": 800,
     "imageHeight": 800,
     "button": {
-      "text": "Studio",
+      "text": "Our Work",
       "href": "/about-us",
       "iconClass": "ph-bold ph-arrow-up-right",
       "btnClass": "btn btn-anim btn-default btn-outline slide-right-up"

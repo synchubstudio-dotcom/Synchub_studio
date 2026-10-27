@@ -33,14 +33,14 @@ export default function Projects() {
                               <p>
                                 Explore a selection of projects blending
                                 <br />
-                                creativity with practical design
+                                creativity with practical design.
                               </p>
                             </div>
                           </div>
                           <div className="col-12 mxd-grid-item no-margin">
                             <div className="mxd-section-title__controls anim-uni-in-up">
                               <AnimatedButton
-                                text="All Works"
+                                text="Case Studies"
                                 className="btn btn-anim btn-default btn-outline slide-right-up"
                                 href={`/works-simple`}
                               >

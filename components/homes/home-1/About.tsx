@@ -45,7 +45,7 @@ export default function About() {
                       as="p"
                       className="mxd-manifest reveal-type anim-uni-in-up"
                     >
-                      we combine strategy,
+                      We combine strategy,
                        AI, design, and engineering 
                        to help startups and enterprises launch products 
                        that people love and businesses trust.

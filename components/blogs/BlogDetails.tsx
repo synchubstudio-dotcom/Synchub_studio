@@ -23,8 +23,8 @@ export default function BlogDetails() {
                       <Link href={`/blog-standard`}>Insights</Link>
                     </span>
                     <span className="current-item">
-                      My journey into the future of art
-                      {/* <a href="#">My journey into the future of art</a> */}
+                      Our journey into the future of art
+                      {/* <a href="#">Our journey into the future of art</a> */}
                     </span>
                   </div>
                   <div className="mxd-article__data loading__item">
@@ -43,12 +43,12 @@ export default function BlogDetails() {
                 </div>
                 <div className="mxd-article__title loading__item">
                   <h1 className="h1-small">
-                    My journey into the future of art
+                    Our journey into the future of art
                   </h1>
                 </div>
                 <div className="mxd-article__tags loading__item">
                   <span className="tag tag-default tag-outline tag-link-outline">
-                    <Link href={`/blog-standard`}>Midjourney</Link>
+                    <Link href={`/blog-standard`}>Mid journey</Link>
                   </span>
                   <span className="tag tag-default tag-outline tag-link-outline">
                     <Link href={`/blog-standard`}>AI</Link>

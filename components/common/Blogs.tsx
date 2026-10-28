@@ -32,13 +32,7 @@ export default function Blogs({
                 </div>
                 <div className="col-12 col-xl-3 mxd-grid-item no-margin">
                   <div className="mxd-section-title__hrcontrols anim-uni-in-up">
-                    <AnimatedButton
-                      text="All Articles"
-                      className="btn btn-anim btn-default btn-outline slide-right-up"
-                      href={`/blog-standard`}
-                    >
-                      <i className="ph-bold ph-arrow-up-right" />
-                    </AnimatedButton>
+                    
                   </div>
                 </div>
               </div>

@@ -211,7 +211,7 @@ export default function ServicesStack() {
                       SEO
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
-                      Optimization
+                      Personal branding
                     </span>
                     <span className="tag tag-default tag-outline-opposite">
                       Campaigns

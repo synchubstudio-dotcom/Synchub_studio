@@ -37,7 +37,7 @@ export default function HomeMainPage() {
         <Approch />
         <MarqueeSlider />
         
-        <Testimonials />
+        {/* <Testimonials /> */}
         
         <Blogs />
         <Cta />

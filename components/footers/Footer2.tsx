@@ -214,7 +214,7 @@ export default function Footer2({
                 />
               </svg>
               <a href="mailto:example@example.com?subject=Message%20from%20your%20site">
-                hello@synchubstudio.com
+                hello@synchub.studio
               </a>
             </p>
           </div>

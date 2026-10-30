@@ -1,6 +1,7 @@
 import "../public/css/styles.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "SyncHUB - Digital Agency & Personal Portfolio",
   description:
@@ -77,7 +78,11 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en" className="no-touch">
       <head>
-        <script dangerouslySetInnerHTML={{ __html: setColorSchemeScript }} />
+        <Script
+          id="theme-script"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{ __html: setColorSchemeScript }}
+        />
       </head>
       <body suppressHydrationWarning>
         <ClientLayout>{children}</ClientLayout>

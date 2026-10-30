@@ -106,12 +106,13 @@ export default function useGsapScrollScaleAnimations() {
       // ✅ Top to bottom animation
       const toBottomEl = document.querySelectorAll(".anim-top-to-bottom");
       toBottomEl.forEach((e) => {
+        const footer = document.querySelector("#mxd-footer") || e;
         gsap
           .timeline({
             scrollTrigger: {
-              trigger: ".fullwidth-text__tl-trigger",
-              start: "top 99%",
-              end: "top 24%",
+              trigger: footer,
+              start: "top bottom",
+              end: "bottom bottom",
               scrub: true,
             },
           })
@@ -120,6 +121,14 @@ export default function useGsapScrollScaleAnimations() {
             { transform: "translate3d(0, -100%, 0)" },
             { transform: "translate3d(0, 0, 0)" }
           );
+
+        // If the page doesn't have enough scroll room to scrub, ensure it is fully visible
+        if (
+          document.documentElement.scrollHeight <=
+          window.innerHeight + 100
+        ) {
+          gsap.set(e, { transform: "translate3d(0, 0, 0)" });
+        }
       });
       // ------------------------------------------------
       // Zoom animations (NEW ✅)

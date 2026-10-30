@@ -412,6 +412,21 @@ html:not([color-scheme="dark"]) .mxd-hero-01__marquee,
   }
 }
 
+/* Header Navbar Logo sizing */
+.mxd-header .mxd-logo__image {
+  width: 17rem !important;
+  height: auto !important;
+  max-height: 4.2rem !important;
+  object-fit: contain !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .mxd-header .mxd-logo__image {
+    width: 24rem !important;
+    max-height: 5.4rem !important;
+  }
+}
+
 .mxd-logo__image--light {
   display: block !important;
 }
@@ -451,6 +466,16 @@ html[color-scheme="dark"] .btn-rotating__image--light,
 html[color-scheme="dark"] .btn-rotating__image--dark,
 [color-scheme="dark"] .btn-rotating__image--dark {
   display: block !important;
+}
+
+/* Rotating Stamp Button interaction */
+.btn-rotating .btn-rotating__center {
+  transition: transform var(--_animspeed-medium) var(--_animbezier);
+  transform-origin: center center;
+}
+
+.no-touch .btn-rotating:hover .btn-rotating__center {
+  transform: scale(0.92);
 }
 
 /* Green Box (bg-accent) high contrast: All text, counter numbers, buttons, and icons in black */
@@ -528,6 +553,15 @@ html[color-scheme="dark"] .btn-rotating__image--dark,
 .btn-accent *,
 .btn-accent i,
 .btn-accent svg,
+.btn-additional,
+.btn-additional *,
+.btn-additional i,
+.btn-additional svg,
+.btn-additional .btn-caption,
+.btn-additional .btn-anim__block,
+.btn-additional .btn-anim__letter,
+.mxd-promo__controls .btn,
+.mxd-promo__controls .btn *,
 .tag-accent,
 .tag-accent *,
 .mxd-tech-stack-cards__logo,
@@ -566,6 +600,24 @@ button.showreel-trigger {
   background-color: var(--accent) !important;
   color: #161616 !important;
 }
+
+/* CTA Promo brand logo light/dark mode support */
+.promo-image-2--light {
+  display: block !important;
+}
+.promo-image-2--dark {
+  display: none !important;
+}
+
+html[color-scheme="dark"] .promo-image-2--light,
+[color-scheme="dark"] .promo-image-2--light {
+  display: none !important;
+}
+html[color-scheme="dark"] .promo-image-2--dark,
+[color-scheme="dark"] .promo-image-2--dark {
+  display: block !important;
+}
+
 
 
 

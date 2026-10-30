@@ -52,9 +52,16 @@ export default function Cta() {
                   height={912}
                 />
                 <Image
-                  className="promo-image promo-image-2"
-                  alt="Image"
+                  className="promo-image promo-image-2 promo-image-2--light"
+                  alt="Brand Logo"
                   src="/web/brand-logo-white.webp"
+                  width={600}
+                  height={601}
+                />
+                <Image
+                  className="promo-image promo-image-2 promo-image-2--dark"
+                  alt="Brand Logo"
+                  src="/web/brand-logo-black.webp"
                   width={600}
                   height={601}
                 />

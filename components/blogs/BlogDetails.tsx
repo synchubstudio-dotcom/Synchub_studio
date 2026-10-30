@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Comments from "./Comments";
+// import Comments from "./Comments";
 import AnimatedButton from "../animation/AnimatedButton";
 
 export default function BlogDetails() {
@@ -359,7 +359,7 @@ export default function BlogDetails() {
             {/* Article Author End */}
             
             {/* Article Comments Start */}
-            <Comments />
+            {/* <Comments /> */}
             {/* Article Comments End */}
           </div>
           {/* Article Container End */}

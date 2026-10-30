@@ -24,29 +24,23 @@ export default function Header1() {
       {/* header logo */}
       <div className="mxd-header__logo loading__fade">
         <Link href="/" className="mxd-logo">
-          {/* logo icon */}
+          {/* logo image */}
           <Image
-            src="/web/brand-logo-black.webp"
+            src="/web/navbar-logo-black.webp"
             alt="SyncHUB Studio"
-            width={56}
-            height={56}
+            width={240}
+            height={50}
             className="mxd-logo__image mxd-logo__image--light"
             priority
           />
           <Image
-            src="/web/brand-logo-white.webp"
+            src="/web/navbar-logo-white.webp"
             alt="SyncHUB Studio"
-            width={56}
-            height={56}
+            width={240}
+            height={50}
             className="mxd-logo__image mxd-logo__image--dark"
             priority
           />
-          {/* logo text */}
-          <span className="mxd-logo__text">
-            SyncHUB
-            <br />
-            Studio
-          </span>
         </Link>
       </div>
       {/* header controls */}

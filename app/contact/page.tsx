@@ -3,7 +3,7 @@ import VelocityMarquee from "@/components/animation/VelocityMarquee";
 import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
 import ContactForm from "@/components/other-pages/contact/ContactForm";
-import Locations from "@/components/other-pages/contact/Locations";
+// import Locations from "@/components/other-pages/contact/Locations";
 import PageTitle from "@/components/other-pages/contact/PageTitle";
 import Socials from "@/components/other-pages/contact/Socials";
 import { Metadata } from "next";
@@ -71,7 +71,7 @@ export default function ContactPage() {
           </div>
         </div>
         <Socials />
-        <Locations />
+        {/* <Locations /> */}
         <Cta />
       </main>
       <Footer2 />

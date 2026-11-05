@@ -32,18 +32,12 @@ export default function AboutUsPage() {
             </div>
           </div>
         </div>
-        <Awards />
+        
         <MarqueeSlider />
-        <Team />
+        {/* <Team /> 
         <Facts />
-        <Approch />
-        <div className="mxd-section padding-pre-title">
-          <div className="mxd-container">
-            <div className="mxd-divider">
-              <BackgroundParallax className="mxd-divider__image divider-image-9 parallax-img" />
-            </div>
-          </div>
-        </div>
+        <Approch /> */}
+        
         <Blogs />
         <Cta />
       </main>

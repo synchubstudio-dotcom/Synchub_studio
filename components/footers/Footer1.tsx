@@ -35,13 +35,9 @@ export default function Footer1() {
     {
       title: "Inner pages",
       links: [
-        { label: "About me", href: "/about-me" },
         { label: "About us", href: "/about-us" },
         { label: "Services", href: "/services" },
-        { label: "Our team", href: "/team" },
-        { label: "Pricing plans", href: "/pricing" },
-        { label: "Frequently asked questions", href: "/faq" },
-        { label: "404 error page", href: "/404" },
+        { label: "FAQ page", href: "/faq" },
         { label: "Contact", href: "/contact" },
       ],
     },

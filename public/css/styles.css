@@ -276,13 +276,15 @@ html[color-scheme="dark"],
 .hamburger__line {
   transition: all 0.3s ease;
 }
-.nav-open .hamburger__line:first-child {
+.nav-open .hamburger__line:first-child,
+.nav-open .hamburger__line:first-of-type {
   translate: none;
   rotate: none;
   scale: none;
   transform: translate(0px, 5px) rotate(45deg);
 }
-.nav-open .hamburger__line:last-child {
+.nav-open .hamburger__line:last-child,
+.nav-open .hamburger__line:last-of-type {
   translate: none;
   rotate: none;
   scale: none;
@@ -294,9 +296,25 @@ html[color-scheme="dark"],
 }
 
 .mxd-footer__fullwidth-text {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+  padding-top: 5rem !important;
+  padding-bottom: 6rem !important;
   margin-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .mxd-footer__fullwidth-text {
+    padding-top: 5.5rem !important;
+    padding-bottom: 6.5rem !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mxd-footer__fullwidth-text {
+    padding-top: 6rem !important;
+    padding-bottom: 7rem !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 .mxd-footer__svg-v2 {
@@ -468,16 +486,6 @@ html[color-scheme="dark"] .btn-rotating__image--dark,
   display: block !important;
 }
 
-/* Rotating Stamp Button interaction */
-.btn-rotating .btn-rotating__center {
-  transition: transform var(--_animspeed-medium) var(--_animbezier);
-  transform-origin: center center;
-}
-
-.no-touch .btn-rotating:hover .btn-rotating__center {
-  transform: scale(0.92);
-}
-
 /* Green Box (bg-accent) high contrast: All text, counter numbers, buttons, and icons in black */
 .mxd-stats-cards__inner.bg-accent,
 .bg-accent {
@@ -617,6 +625,203 @@ html[color-scheme="dark"] .promo-image-2--dark,
 [color-scheme="dark"] .promo-image-2--dark {
   display: block !important;
 }
+
+/* Hero bottom data group: description text centered with video frame size preserved */
+@media only screen and (min-width: 1200px) {
+  .mxd-hero-01__data-wrap {
+    padding-right: 0 !important;
+  }
+
+  .mxd-hero-01__data-descr {
+    margin: 0 auto !important;
+    text-align: center !important;
+    transform: translateX(3rem) !important;
+    max-width: 600px !important;
+    width: auto !important;
+    padding-top: 2.5rem !important;
+  }
+
+  .mxd-hero-01__data-descr p {
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* ==========================================================================
+   Spotlight Divider Hover Effect (Soft Blurry Spread Lens)
+   ========================================================================== */
+.spotlight-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: default;
+  --spotlight-radius: 380px;
+  --spotlight-opacity: 0;
+  --mouse-x: -2000px;
+  --mouse-y: -2000px;
+}
+
+@media only screen and (max-width: 767px) {
+  .spotlight-divider {
+    --spotlight-radius: 220px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .spotlight-divider {
+    --spotlight-radius: 460px;
+  }
+}
+
+.spotlight-divider__layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/web/hero-section03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+}
+
+/* Layer 1: Base Full-Color Preview (shown when cursor is not hovering) */
+.spotlight-divider__layer--base-color {
+  filter: saturate(1.2) brightness(1.03);
+  z-index: 1;
+}
+
+/* Layer 2: Black & White Overlay (fades in when cursor hovers on image) */
+.spotlight-divider__layer--bw {
+  filter: grayscale(100%) contrast(1.08) brightness(0.92);
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity;
+  z-index: 2;
+}
+
+/* Layer 3: Vibrant Color Layer revealed by cursor spotlight */
+.spotlight-divider__layer--color {
+  filter: saturate(1.25) brightness(1.05);
+  opacity: var(--spotlight-opacity, 0);
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  mask-image: radial-gradient(
+    circle var(--spotlight-radius, 380px) at var(--mouse-x, -2000px) var(--mouse-y, -2000px),
+    black 0%,
+    rgba(0, 0, 0, 0.88) 30%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.15) 80%,
+    transparent 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle var(--spotlight-radius, 380px) at var(--mouse-x, -2000px) var(--mouse-y, -2000px),
+    black 0%,
+    rgba(0, 0, 0, 0.88) 30%,
+    rgba(0, 0, 0, 0.5) 60%,
+    rgba(0, 0, 0, 0.15) 80%,
+    transparent 100%
+  );
+  will-change: mask-image, -webkit-mask-image, opacity;
+  z-index: 3;
+}
+
+/* Center Lockup: Placed inside the color layer with NO box background, revealed only by the spotlight */
+.spotlight-divider__center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 1.6rem;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  pointer-events: none;
+  z-index: 2;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.spotlight-divider__text-logo {
+  width: 4.4rem;
+  height: 4.4rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.7));
+}
+
+.spotlight-divider__text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+  color: #ffffff;
+  font-family: var(--_font-accent, "Funnel Display", sans-serif);
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.75);
+}
+
+.spotlight-divider__text-group .text-line {
+  display: block;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.spotlight-divider__text-group .text-bold {
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+@media only screen and (max-width: 767px) {
+  .spotlight-divider__center-text {
+    gap: 1.2rem;
+  }
+
+  .spotlight-divider__text-logo {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .spotlight-divider__text-group {
+    font-size: 1.5rem;
+  }
+}
+
+/* Stats Card Phone Image: Perfect fit sizing */
+.mxd-stats-cards__image.mxd-stats-cards-image-2 {
+  width: 530px !important;
+  max-width: none !important;
+  top: auto !important;
+  bottom: -2rem !important;
+  left: -4rem !important;
+  padding: 0 !important;
+}
+
+@media only screen and (min-width: 1400px) {
+  .mxd-stats-cards__image.mxd-stats-cards-image-2 {
+    width: 560px !important;
+    bottom: -3rem !important;
+    left: -5rem !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mxd-stats-cards__image.mxd-stats-cards-image-2 {
+    width: 320px !important;
+    left: 0 !important;
+  }
+}
+
+
+
+
+
+
 
 
 

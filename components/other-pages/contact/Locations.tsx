@@ -47,7 +47,7 @@ export default function Locations() {
                             </ul>
                             <ul>
                               <li className="anim-uni-in-up">
-                                <a href="tel:+12127089400">+1 212-708-9400</a>
+                                <a href="tel:+917984799844">+91 7984799844</a>
                               </li>
                               <li className="anim-uni-in-up">
                                 <a href="mailto:example@example.com?subject=Message%20from%20your%20site">

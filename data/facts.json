@@ -25,8 +25,8 @@
     "suffix": "%",
     "description": "Clients come back for\na new projects",
     "image": "/web/80-percentage.png",
-    "imageWidth": 800,
-    "imageHeight": 800,
+    "imageWidth": 640,
+    "imageHeight": 693,
     "avatars": [
       {
         "src": "/web/300x300_ava-02.webp",

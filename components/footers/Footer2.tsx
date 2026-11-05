@@ -8,7 +8,7 @@ import SubscribeForm from "./SubscribeForm";
 
 export default function Footer2({
   text = "synchub.studio",
-  showBlocks = false,
+  showBlocks = true,
 }: {
   text?: string;
   showBlocks?: boolean;
@@ -41,11 +41,15 @@ export default function Footer2({
         <div className="fullwidth-text__tl-trigger" />
         <div
           className="mxd-footer__fullwidth-text anim-top-to-bottom"
-          style={{
-            paddingTop: "100px",
-            paddingBottom: "100px",
-            marginBottom: 0,
-          }}
+          style={
+            !showBlocks
+              ? {
+                  paddingTop: "100px",
+                  paddingBottom: "100px",
+                  marginBottom: 0,
+                }
+              : undefined
+          }
         >
           {text !== "alexwalker" ? (
             <svg
@@ -113,7 +117,7 @@ export default function Footer2({
         </div>
       </div>
       {/* Footer Block - Fullwidth Text End */}
-      {/* Footer Block - Info Columns Start (Hidden for now) */}
+      {/* Footer Block - Info Columns Start */}
       {showBlocks && (
         <div className="mxd-footer__footer-blocks">
         {/* single column */}
@@ -242,7 +246,7 @@ export default function Footer2({
             c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
                 />
               </svg>
-              <a href="tel:+12127089400">+1 212-708-9400</a>
+              <a href="tel:+12127089400">+91 7984799844</a>
             </p>
           </div>
           {/* inner card */}
@@ -306,7 +310,7 @@ export default function Footer2({
                   href="https://themeforest.net/user/ib-themes/portfolio"
                   target="_blank"
                 >
-                  ib themes
+                  SyncHUB.Studio
                 </a>
                 <i className="ph-bold ph-copyright" />
                 {new Date().getFullYear()}

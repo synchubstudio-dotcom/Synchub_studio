@@ -104,6 +104,7 @@ export default function MobileMenu() {
           }}
           className={`mxd-nav__hamburger ${isMenuOpen ? "nav-open" : ""}`}
           ref={hamburgerBtnRef}
+          aria-label="Toggle navigation menu"
         >
           {/* flip element */}
           <div className="hamburger__base" ref={flipBaseRef} />
@@ -248,7 +249,7 @@ export default function MobileMenu() {
               className="mxd-menu__data fade-in-up-elm"
               style={{ transitionDelay: "0.4s" }}
             >
-              <p className="t-xsmall">
+              {/* <p className="t-xsmall">
                 Made with <i className="ph-fill ph-heart t-additional" /> by{" "}
                 <a
                   className="no-effect"
@@ -257,10 +258,10 @@ export default function MobileMenu() {
                 >
                   ib themes
                 </a>
-              </p>
+              </p> */}
               <p className="t-xsmall">
                 <i className="ph ph-copyright" />
-                2025
+                2026 SyncHUB.Studio
               </p>
             </div>
           </div>

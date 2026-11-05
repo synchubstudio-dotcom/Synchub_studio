@@ -1,6 +1,6 @@
 "use client";
 
-// import MobileMenu from "@/components/headers/MobileMenu";
+import MobileMenu from "@/components/headers/MobileMenu";
 import Header1 from "@/components/headers/Header1";
 import InitScroll from "@/components/scroll/InitScroll";
 import LenisSmoothScroll from "@/components/scroll/LenisSmoothScroll";
@@ -45,7 +45,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   }, []);
   return (
     <>
-      {/* <MobileMenu /> */}
+      <MobileMenu />
       <Header1 />
       {children}
       <InitScroll />

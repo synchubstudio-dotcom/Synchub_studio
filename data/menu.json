@@ -14,13 +14,9 @@
   {
     "title": "Pages",
     "submenu": [
-      { "label": "About me", "href": "/about-me" },
       { "label": "About us", "href": "/about-us" },
       { "label": "Services", "href": "/services" },
-      { "label": "Our team", "href": "/team" },
-      { "label": "Pricing", "href": "/pricing" },
-      { "label": "FAQ page", "href": "/faq" },
-      { "label": "404 error page", "href": "/404" }
+      { "label": "FAQ page", "href": "/faq" }
     ]
   },
   {

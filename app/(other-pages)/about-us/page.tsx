@@ -10,12 +10,14 @@ import Hero2 from "@/components/other-pages/about/Hero2";
 import MarqueeSlider2 from "@/components/other-pages/about/MarqueeSlider2";
 import Team from "@/components/other-pages/about/Team";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "About Us || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "About Us",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Learn about SyncHUB.Studio - a digital design and technology agency crafting high-performance, scalable digital products and brand experiences.",
+  canonical: "/about-us",
+});
 export default function AboutUsPage() {
   return (
     <>

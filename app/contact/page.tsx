@@ -7,12 +7,14 @@ import ContactForm from "@/components/other-pages/contact/ContactForm";
 import PageTitle from "@/components/other-pages/contact/PageTitle";
 import Socials from "@/components/other-pages/contact/Socials";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Contact || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Contact Us",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Get in touch with SyncHUB.Studio. Have an ambitious project in mind? Reach us at hello@synchub.studio to start the conversation.",
+  canonical: "/contact",
+});
 export default function ContactPage() {
   return (
     <>

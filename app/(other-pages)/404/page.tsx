@@ -3,12 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Metadata } from "next";
 import AnimatedButton from "@/components/animation/AnimatedButton";
-export const metadata: Metadata = {
-  title:
-    "Page Not Found || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-  description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "404 - Page Not Found",
+  description: "The page you are looking for does not exist.",
+  noIndex: true,
+});
 export default function NotFoundPage() {
   return (
     <>

@@ -1,11 +1,11 @@
 {
-  "name": "SyncHUB - Digital Agency & Personal Portfolio",
+  "name": "SyncHUB.Studio - Digital Agency & Creative Engineering",
   "short_name": "SyncHUB",
   "icons": [
-    { "src": "/img/favicon/android-icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon.png", "type": "image/png", "sizes": "192x192" },
     { "src": "/img/favicon/android-icon-512.png", "type": "image/png", "sizes": "512x512" }
   ],
-  "theme_color": "#efefef",
-  "background_color": "#efefef",
+  "theme_color": "#0f0f11",
+  "background_color": "#0f0f11",
   "display": "standalone"
 }

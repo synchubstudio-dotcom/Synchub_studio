@@ -3,12 +3,14 @@ import Blogs from "@/components/common/Blogs";
 import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Blog Details || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Article Details",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Explore our deep dive into modern digital craftsmanship, scalable architecture, and impactful UI design principles.",
+  canonical: "/blog-article",
+});
 export default function BlogSinglePage() {
   return (
     <>

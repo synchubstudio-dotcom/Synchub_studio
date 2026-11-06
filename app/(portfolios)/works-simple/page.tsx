@@ -6,12 +6,14 @@ import PortfolioList from "@/components/portfolios/PortfolioList";
 import Portfolios1 from "@/components/portfolios/Portfolios1";
 import Testimonials from "@/components/common/Testimonials";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Work Simple || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Our Work & Projects",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Explore SyncHUB.Studio's curated showcase of digital platforms, bespoke web solutions, brand designs, and creative engineering projects.",
+  canonical: "/works-simple",
+});
 export default function WorksSimplePage() {
   return (
     <>

@@ -474,19 +474,19 @@
   "projects10": [
     {
       "id": 48,
-      "image": "/img/works/preview/1920x1080_prv-04.webp",
+      "image": "/web/works/works-01.png",
       "tags": ["Brand", "Illustrations", "Web"],
       "title": "Studio template"
     },
     {
       "id": 49,
-      "image": "/img/works/preview/1920x1080_prv-01.webp",
+      "image": "/web/works/works-02.jpg",
       "tags": ["Sora", "AI", "Editorial"],
       "title": "AI Experiments"
     },
     {
       "id": 50,
-      "image": "/img/works/preview/1920x1080_prv-05.webp",
+      "image": "/web/works/works-03.png",
       "tags": ["Design", "UI/UX", "Android"],
       "title": "Mobile app design"
     }

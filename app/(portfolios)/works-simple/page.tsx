@@ -22,9 +22,9 @@ export default function WorksSimplePage() {
         className="mxd-page-content inner-page-content"
       >
         <Portfolios1 />
-        <PortfolioList />
+        {/* <PortfolioList /> */}
         <MarqueeSlider />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Cta />
       </main>
       <Footer2 />

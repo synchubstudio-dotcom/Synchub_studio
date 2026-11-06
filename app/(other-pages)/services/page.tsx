@@ -5,12 +5,14 @@ import Hero from "@/components/other-pages/services/Hero";
 import ParallaxDivider from "@/components/other-pages/services/ParallaxDivider";
 import Services from "@/components/other-pages/services/Services";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Services || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Services",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Explore SyncHUB.Studio services: web and mobile development, UI/UX design, branding, enterprise platforms, and digital growth strategies.",
+  canonical: "/services",
+});
 export default function ServicesPage() {
   return (
     <>

@@ -1,0 +1,9 @@
+# Robots.txt for SyncHUB.Studio
+User-agent: *
+Allow: /
+Disallow: /preview
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://synchub.studio/sitemap.xml
+

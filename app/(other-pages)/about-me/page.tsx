@@ -14,12 +14,14 @@ import Blogs from "@/components/common/Blogs";
 import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "About Me || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "About Me",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Personal profile, design philosophy, technical background, and creative experience from SyncHUB.Studio.",
+  canonical: "/about-me",
+});
 export default function AboutMePage() {
   return (
     <>

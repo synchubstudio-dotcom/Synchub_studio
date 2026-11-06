@@ -6,12 +6,14 @@ import ParallaxDivider from "@/components/portfolios/ParallaxDivider";
 import PortfolioMasonry from "@/components/portfolios/PortfolioMasonry";
 import Testimonials from "@/components/common/Testimonials";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Work Masonry || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Works Masonry",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Explore our creative projects and portfolio showcased in a dynamic masonry layout by SyncHUB.Studio.",
+  canonical: "/works-masonry",
+});
 export default function WorksMasonryPage() {
   return (
     <>

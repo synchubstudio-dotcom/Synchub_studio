@@ -5,12 +5,14 @@ import Footer2 from "@/components/footers/Footer2";
 import Partners from "@/components/other-pages/Partners";
 import Pricing from "@/components/other-pages/Pricing";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Pricing || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Pricing & Plans",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Transparent pricing and flexible partnership models for web development, design systems, and digital product engineering by SyncHUB.Studio.",
+  canonical: "/pricing",
+});
 export default function PricingPage() {
   return (
     <>

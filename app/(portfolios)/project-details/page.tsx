@@ -8,12 +8,14 @@ import NextPrevNavigation from "@/components/portfolios/NextPrevNavigation";
 import ParallaxDivider2 from "@/components/portfolios/ParallaxDivider2";
 import Solutions from "@/components/portfolios/Solutions";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Project Details || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Project Case Study",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "In-depth case study exploring challenges, digital architecture, UX/UI strategy, and scalable solutions engineered by SyncHUB.Studio.",
+  canonical: "/project-details",
+});
 export default function ProjectDetailsPage() {
   return (
     <>

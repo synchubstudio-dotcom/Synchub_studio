@@ -3,12 +3,14 @@ import Cta from "@/components/common/Cta";
 import Footer2 from "@/components/footers/Footer2";
 import Faqs from "@/components/other-pages/Faqs";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Faqs || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Frequently Asked Questions",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Find answers to frequently asked questions about SyncHUB.Studio services, engineering workflow, pricing, timelines, and deliverables.",
+  canonical: "/faq",
+});
 export default function FaqsPage() {
   return (
     <>

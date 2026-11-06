@@ -6,12 +6,14 @@ import Hero from "@/components/other-pages/team/Hero";
 import MarqueeSlider from "@/components/other-pages/team/MarqueeSlider";
 import Teammembers from "@/components/other-pages/team/Teammembers";
 import { Metadata } from "next";
-export const metadata: Metadata = {
-  title:
-    "Team || SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
+import { constructMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = constructMetadata({
+  title: "Our Team",
   description:
-    "SyncHUB - Digital Agency & Personal Portfolio React Nextjs Template",
-};
+    "Meet the multidisciplinary creators, engineers, strategists, and designers behind SyncHUB.Studio.",
+  canonical: "/team",
+});
 export default function TeamPage() {
   return (
     <>

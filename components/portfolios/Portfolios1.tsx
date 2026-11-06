@@ -74,10 +74,10 @@ export default function Portfolios1() {
             <div className="content__block loading__fade">
               <StackCards stackName="projects-stack" className="stack-wrapper">
                 {projects10.map((s) => (
-                  <Link
+                  <div
                     key={s.id}
                     className="mxd-projects-stack__inner justify-between"
-                    href={`/project-details`}
+                    // href={`/project-details`}
                   >
                     <div className="mxd-projects-stack__image">
                       <Image
@@ -100,7 +100,7 @@ export default function Portfolios1() {
                     <div className="mxd-projects-stack__title no-margin">
                       <h2 className="permanent-light">{s.title}</h2>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </StackCards>
             </div>

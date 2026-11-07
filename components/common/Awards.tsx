@@ -72,7 +72,8 @@ export default function Awards() {
               <a
                 className="mxd-awards-list__item hover-reveal__item"
                 href={item.url}
-                target="_blank"
+                target={item.url.startsWith("http") ? "_blank" : undefined}
+                rel={item.url.startsWith("http") ? "noopener noreferrer" : undefined}
                 key={idx}
                 onMouseMove={(e) => handleMouseMove(e, idx)}
                 onMouseLeave={handleMouseLeave}

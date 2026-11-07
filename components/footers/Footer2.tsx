@@ -307,8 +307,7 @@ export default function Footer2({
               <p className="t-xsmall t-muted">
                 <a
                   className="no-effect"
-                  href="https://themeforest.net/user/ib-themes/portfolio"
-                  target="_blank"
+                  href="/"
                 >
                   SyncHUB.Studio
                 </a>

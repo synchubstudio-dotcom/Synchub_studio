@@ -90,8 +90,7 @@ export default function About() {
                       <div className="mxd-links-lines__divider anim-uni-in-up" />
                       <a
                         className="mxd-links-lines__link anim-uni-in-up"
-                        href="https://www.behance.net/"
-                        target="_blank"
+                        href="/works-simple"
                       >
                         <h6 className="mxd-links-lines__title">
                           Behance curated work

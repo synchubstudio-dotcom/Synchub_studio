@@ -294,21 +294,21 @@
   "projects6": [
     {
       "id": 26,
-      "src": "/web/featured/featured-projects01.png",
+      "src": "/web/featured/featured-projects01.webp",
       "title": "Inspiring ideas"
     },
     {
       "id": 27,
-      "src": "/web/featured/featured-projects05.png"
+      "src": "/web/featured/featured-projects05.webp"
     },
     {
       "id": 28,
-      "src": "/web/featured/featured-projects03.png",
+      "src": "/web/featured/featured-projects03.webp",
       "title": "Creative minds"
     },
     {
       "id": 29,
-      "src": "/web/featured/featured-projects04.png"
+      "src": "/web/featured/featured-projects04.webp"
     }
   ],
   "projects7": [
@@ -474,19 +474,19 @@
   "projects10": [
     {
       "id": 48,
-      "image": "/web/works/works-01.png",
+      "image": "/web/works/works-01.webp",
       "tags": ["Brand", "Illustrations", "Web"],
       "title": "Studio template"
     },
     {
       "id": 49,
-      "image": "/web/works/works-02.jpg",
+      "image": "/web/works/works-02.webp",
       "tags": ["Sora", "AI", "Editorial"],
       "title": "AI Experiments"
     },
     {
       "id": 50,
-      "image": "/web/works/works-03.png",
+      "image": "/web/works/works-03.webp",
       "tags": ["Design", "UI/UX", "Android"],
       "title": "Mobile app design"
     }

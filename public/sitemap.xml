@@ -41,21 +41,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://synchub.studio/pricing</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://synchub.studio/team</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://synchub.studio/about-me</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://synchub.studio/blog-standard</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -71,4 +56,3 @@
     <priority>0.6</priority>
   </url>
 </urlset>
-

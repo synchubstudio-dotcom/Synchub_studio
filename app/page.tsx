@@ -1,4 +1,16 @@
-import HomeMainPage from "./(homes)/home-main/page";
+import Blogs from "@/components/common/Blogs";
+import Cta from "@/components/common/Cta";
+import Footer2 from "@/components/footers/Footer2";
+
+import About from "@/components/homes/home-1/About";
+import Approch from "@/components/common/Approch";
+import Devider from "@/components/homes/home-1/Devider";
+import Facts from "@/components/common/Facts";
+import Hero from "@/components/homes/home-1/Hero";
+import Marquee from "@/components/homes/home-1/Marquee";
+import MarqueeSlider from "@/components/common/MarqueeSlider";
+import Projects from "@/components/homes/home-1/Projects";
+import ServicesStack from "@/components/homes/home-1/ServicesStack";
 import { Metadata } from "next";
 import { constructMetadata } from "@/lib/seo";
 
@@ -10,5 +22,22 @@ export const metadata: Metadata = constructMetadata({
 });
 
 export default function Home() {
-  return <HomeMainPage />;
+  return (
+    <>
+      <main id="mxd-page-content" className="mxd-page-content">
+        <Hero />
+        <Devider />
+        <About />
+        <Facts />
+        <Marquee />
+        <Projects />
+        <ServicesStack />
+        <Approch />
+        <MarqueeSlider />
+        <Blogs />
+        <Cta />
+      </main>
+      <Footer2 />
+    </>
+  );
 }

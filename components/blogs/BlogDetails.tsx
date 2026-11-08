@@ -334,13 +334,21 @@ export default function BlogDetails() {
                   </h5>
                   <div className="mxd-article-author__socials">
                     <span className="tag tag-default tag-opposite tag-link-opposite">
-                      <a href="https://www.linkedin.com/" target="_blank">
+                      <a
+                        href="https://www.linkedin.com/company/synchub-studio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         LinkedIn
                       </a>
                     </span>
                     <span className="tag tag-default tag-opposite tag-link-opposite">
-                      <a href="https://www.behance.net/" target="_blank">
-                        Behance
+                      <a
+                        href="https://github.com/synchubstudio-dotcom"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        GitHub
                       </a>
                     </span>
                   </div>

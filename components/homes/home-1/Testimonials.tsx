@@ -44,8 +44,8 @@ export default function Testimonials() {
                             <div className="mxd-section-title__controls anim-uni-in-up">
                               <a
                                 className="mxd-section-title__image-link"
-                                href="https://clutch.co/"
-                                target="_blank"
+                                href="#testimonials"
+                                aria-label="Verified 5-Star Reviews"
                               >
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"

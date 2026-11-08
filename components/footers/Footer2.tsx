@@ -217,7 +217,7 @@ export default function Footer2({
             c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
                 />
               </svg>
-              <a href="mailto:example@example.com?subject=Message%20from%20your%20site">
+              <a href="mailto:hello@synchub.studio?subject=Message%20from%20your%20site">
                 hello@synchub.studio
               </a>
             </p>
@@ -307,8 +307,7 @@ export default function Footer2({
               <p className="t-xsmall t-muted">
                 <a
                   className="no-effect"
-                  href="https://themeforest.net/user/ib-themes/portfolio"
-                  target="_blank"
+                  href="/"
                 >
                   SyncHUB.Studio
                 </a>

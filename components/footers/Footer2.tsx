@@ -23,7 +23,7 @@ export default function Footer2({
         if (b && b.width > 0) {
           svgRef.current.setAttribute(
             "viewBox",
-            `${b.x} ${b.y} ${b.width} ${b.height}`
+            `${b.x} ${b.y} ${b.width} ${b.height}`,
           );
         }
       }
@@ -70,7 +70,8 @@ export default function Footer2({
                 fontWeight="800"
                 letterSpacing="-0.035em"
                 style={{
-                  fontFamily: "var(--_font-accent, 'Funnel Display', sans-serif)",
+                  fontFamily:
+                    "var(--_font-accent, 'Funnel Display', sans-serif)",
                 }}
               >
                 {text || "synchub.studio"}
@@ -120,203 +121,209 @@ export default function Footer2({
       {/* Footer Block - Info Columns Start */}
       {showBlocks && (
         <div className="mxd-footer__footer-blocks">
-        {/* single column */}
-        <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
-          <div className="footer-blocks__card fullheight-card">
-            {/* footer navigation */}
-            <div className="footer-blocks__nav">
-              <ul className="footer-nav">
-                {footerNav.map(
-                  (
-                    item: { label: string; href: string; counter?: number },
-                    idx: number
-                  ) => (
-                    <li className="footer-nav__item anim-uni-in-up" key={idx}>
-                      <AnimatedButton
-                        href={item.href}
-                        text={item.label}
-                        className="footer-nav__link btn-anim"
-                      />
+          {/* single column */}
+          <div className="footer-blocks__column animate-card-3">
+            {/* inner card */}
+            <div className="footer-blocks__card fullheight-card">
+              {/* footer navigation */}
+              <div className="footer-blocks__nav">
+                <ul className="footer-nav">
+                  {footerNav.map(
+                    (
+                      item: { label: string; href: string; counter?: number },
+                      idx: number,
+                    ) => (
+                      <li className="footer-nav__item anim-uni-in-up" key={idx}>
+                        <AnimatedButton
+                          href={item.href}
+                          text={item.label}
+                          className="footer-nav__link btn-anim"
+                        />
 
-                      {item.counter && (
-                        <p className="footer-nav__counter">
-                          <svg
-                            version="1.1"
-                            xmlns="http://www.w3.org/2000/svg"
-                            x="0px"
-                            y="0px"
-                            width="20px"
-                            height="20px"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                          >
-                            <path
+                        {item.counter && (
+                          <p className="footer-nav__counter">
+                            <svg
+                              version="1.1"
+                              xmlns="http://www.w3.org/2000/svg"
+                              x="0px"
+                              y="0px"
+                              width="20px"
+                              height="20px"
+                              viewBox="0 0 20 20"
                               fill="currentColor"
-                              d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+                            >
+                              <path
+                                fill="currentColor"
+                                d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
                   c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
                   c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
                   c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
                   c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
                   c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
                   c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
-                            />
-                          </svg>
-                          <span>{item.counter}</span>
-                        </p>
-                      )}
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-            {/* links */}
-            <div className="footer-blocks__links anim-uni-in-up">
-              <AnimatedButton
-                text="Privacy Policy"
-                as={"a"}
-                className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                href="#"
-              >
-                <i className="ph ph-arrow-right" />
-              </AnimatedButton>
-              <AnimatedButton
-                text="Terms &amp; conditions"
-                as={"a"}
-                className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                href="#"
-              >
-                <i className="ph ph-arrow-right" />
-              </AnimatedButton>
-            </div>
-          </div>
-        </div>
-        {/* single column */}
-        <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
-          <div className="footer-blocks__card">
-            <p className="mxd-point-subtitle anim-uni-in-up">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="20px"
-                height="20px"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill="currentColor"
-                  d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
-                />
-              </svg>
-              <a href="mailto:hello@synchub.studio?subject=Message%20from%20your%20site">
-                hello@synchub.studio
-              </a>
-            </p>
-          </div>
-          {/* inner card */}
-          <div className="footer-blocks__card">
-            <p className="mxd-point-subtitle anim-uni-in-up">
-              <svg
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                x="0px"
-                y="0px"
-                width="20px"
-                height="20px"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill="currentColor"
-                  d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
-            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
-            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
-            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
-            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
-            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
-            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
-                />
-              </svg>
-              <a href="tel:+7984799844">+91 7984799844</a>
-            </p>
-          </div>
-          {/* inner card */}
-          <div className="footer-blocks__card fill-card notify">
-            {/* card title */}
-            <div className="footer-blocks__title anim-uni-in-up">
-              <p className="footer-blocks__title-m">
-                Subscribe to our insights:
-              </p>
-            </div>
-            {/* subscribe form container */}
-            <div className="form-container anim-uni-in-up">
-              {/* reply messages */}
-              <div className="form__reply subscription-ok">
-                <span className="reply__text">
-                  Done! Thanks for subscribing.
-                </span>
-              </div>
-              <div className="form__reply subscription-error">
-                <span className="reply__text">
-                  Ooops! Something went wrong. Please try again later.
-                </span>
-              </div>
-              {/* subscribe form */}
-              <SubscribeForm />
-            </div>
-          </div>
-        </div>
-        {/* single column */}
-        <div className="footer-blocks__column animate-card-3">
-          {/* inner card */}
-          <div className="footer-blocks__card fullheight-card">
-            {/* nav block */}
-            <div className="footer-blocks__block">
-              {/* card title */}
-              <div className="footer-blocks__title anim-uni-in-up">
-                <p className="footer-blocks__title-l">Ecosystem</p>
-              </div>
-              {/* footer socials */}
-              <div className="footer-blocks__socials">
-                <ul className="footer-socials">
-                  {socials.map((social, i) => (
-                    <li key={i} className="footer-socials__item anim-uni-in-up">
-                      <a
-                        href={social.url}
-                        className="footer-socials__link"
-                        target="_blank"
-                      >
-                        {social.title}
-                      </a>
-                    </li>
-                  ))}
+                              />
+                            </svg>
+                            <span>{item.counter}</span>
+                          </p>
+                        )}
+                      </li>
+                    ),
+                  )}
                 </ul>
               </div>
-            </div>
-            {/* links */}
-            <div className="footer-blocks__links anim-uni-in-up">
-              <p className="t-xsmall t-muted">
-                <a
-                  className="no-effect"
-                  href="/"
+              {/* links */}
+              <div className="footer-blocks__links anim-uni-in-up">
+                <AnimatedButton
+                  text="Privacy Policy"
+                  as={"a"}
+                  className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
+                  href="#"
                 >
-                  SyncHUB.Studio
-                </a>
-                <i className="ph-bold ph-copyright" />
-                {new Date().getFullYear()}
-              </p>
+                  <i className="ph ph-arrow-right" />
+                </AnimatedButton>
+                <AnimatedButton
+                  text="Terms &amp; conditions"
+                  as={"a"}
+                  className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
+                  href="#"
+                >
+                  <i className="ph ph-arrow-right" />
+                </AnimatedButton>
+              </div>
             </div>
           </div>
-        </div>
+          {/* single column */}
+          <div className="footer-blocks__column animate-card-3">
+            {/* inner card */}
+            <div className="footer-blocks__card">
+              <p className="mxd-point-subtitle anim-uni-in-up">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
+                  />
+                </svg>
+                <a href="mailto:hello@synchub.studio?subject=Website%20Enquiry&body=Hello%20SyncHUB%20Studio,">
+                  hello@synchub.studio
+                </a>
+              </p>
+            </div>
+            {/* inner card */}
+            <div className="footer-blocks__card">
+              <p className="mxd-point-subtitle anim-uni-in-up">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19.6,9.6c0,0-3,0-4,0c-0.4,0-1.8-0.2-1.8-0.2c-0.6-0.1-1.1-0.2-1.6-0.6c-0.5-0.3-0.9-0.8-1.2-1.2
+            c-0.3-0.4-0.4-0.9-0.5-1.4c0,0-0.1-1.1-0.2-1.5c-0.1-1.1,0-4.4,0-4.4C10.4,0.2,10.2,0,10,0S9.6,0.2,9.6,0.4c0,0,0.1,3.3,0,4.4
+            c0,0.4-0.2,1.5-0.2,1.5C9.4,6.7,9.2,7.2,9,7.6C8.7,8.1,8.2,8.5,7.8,8.9c-0.5,0.3-1,0.5-1.6,0.6c0,0-1.2,0.1-1.7,0.2
+            c-1,0.1-4.2,0-4.2,0C0.2,9.6,0,9.8,0,10c0,0.2,0.2,0.4,0.4,0.4c0,0,3.1-0.1,4.2,0c0.4,0,1.7,0.2,1.7,0.2c0.6,0.1,1.1,0.2,1.6,0.6
+            c0.4,0.3,0.8,0.7,1.1,1.1c0.3,0.5,0.5,1,0.6,1.6c0,0,0.1,1.3,0.2,1.7c0,1,0,4.1,0,4.1c0,0.2,0.2,0.4,0.4,0.4s0.4-0.2,0.4-0.4
+            c0,0,0-3.1,0-4.1c0-0.4,0.2-1.7,0.2-1.7c0.1-0.6,0.2-1.1,0.6-1.6c0.3-0.4,0.7-0.8,1.1-1.1c0.5-0.3,1-0.5,1.6-0.6
+            c0,0,1.3-0.1,1.8-0.2c1,0,4,0,4,0c0.2,0,0.4-0.2,0.4-0.4C20,9.8,19.8,9.6,19.6,9.6L19.6,9.6z"
+                  />
+                </svg>
+                <a
+                  href="https://wa.me/917984799844?text=Hello%20SyncHUB%20Studio!%20I'm%20interested%20in%20your%20expertise%20and%20would%20love%20to%20connect%20with%20your%20team%20to%20discuss%20a%20potential%20collaboration."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +91 7984799844
+                </a>
+              </p>
+            </div>
+            {/* inner card */}
+            <div className="footer-blocks__card fill-card notify">
+              {/* card title */}
+              <div className="footer-blocks__title anim-uni-in-up">
+                <p className="footer-blocks__title-m">
+                  Subscribe to our insights:
+                </p>
+              </div>
+              {/* subscribe form container */}
+              <div className="form-container anim-uni-in-up">
+                {/* reply messages */}
+                <div className="form__reply subscription-ok">
+                  <span className="reply__text">
+                    Done! Thanks for subscribing.
+                  </span>
+                </div>
+                <div className="form__reply subscription-error">
+                  <span className="reply__text">
+                    Ooops! Something went wrong. Please try again later.
+                  </span>
+                </div>
+                {/* subscribe form */}
+                <SubscribeForm />
+              </div>
+            </div>
+          </div>
+          {/* single column */}
+          <div className="footer-blocks__column animate-card-3">
+            {/* inner card */}
+            <div className="footer-blocks__card fullheight-card">
+              {/* nav block */}
+              <div className="footer-blocks__block">
+                {/* card title */}
+                <div className="footer-blocks__title anim-uni-in-up">
+                  <p className="footer-blocks__title-l">Ecosystem</p>
+                </div>
+                {/* footer socials */}
+                <div className="footer-blocks__socials">
+                  <ul className="footer-socials">
+                    {socials.map((social, i) => (
+                      <li
+                        key={i}
+                        className="footer-socials__item anim-uni-in-up"
+                      >
+                        <a
+                          href={social.url}
+                          className="footer-socials__link"
+                          target="_blank"
+                        >
+                          {social.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              {/* links */}
+              <div className="footer-blocks__links anim-uni-in-up">
+                <p className="t-xsmall t-muted">
+                  <a className="no-effect" href="/">
+                    SyncHUB.Studio
+                  </a>
+                  <i className="ph-bold ph-copyright" />
+                  {new Date().getFullYear()}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       )}
       {/* Footer Block - Info Columns End */}

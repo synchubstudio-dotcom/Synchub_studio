@@ -63,7 +63,7 @@ export default function BlogDetails() {
               <div className="mxd-article__thumb loading__fade">
                 <Image
                   alt="Article Thumbnail"
-                  src="/web/hero-section03.jpg"
+                  src="/web/hero-section03.webp"
                   width={1920}
                   height={1280}
                 />

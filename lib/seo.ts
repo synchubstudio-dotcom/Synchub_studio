@@ -7,7 +7,7 @@ export const siteConfig = {
   description:
     "From ambitious ideas to enterprise-scale platforms, we create digital experiences that are fast, scalable, and built for long-term growth. Connecting ideas across the spectrum.",
   url: "https://synchub.studio",
-  ogImage: "https://synchub.studio/web/hero-section03.jpg",
+  ogImage: "https://synchub.studio/web/hero-section03.webp",
   email: "hello@synchub.studio",
   keywords: [
     // Brand & Studio

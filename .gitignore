@@ -42,3 +42,14 @@ next-env.d.ts
 
 # MCP / testing artifacts
 .playwright-mcp/
+
+# Email templates & internal sender scripts
+app/email-template/
+app/offer-email/
+public/email-template.html
+public/synchub-offer-email.html
+synchub-email-template/
+send_email.py
+candidates.csv
+__pycache__/
+*.pyc

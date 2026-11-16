@@ -73,6 +73,7 @@ export default function AnimatedButton<As extends ElementType = "div">(
   const tagProps = {
     className: `btn-anim ${className}`,
     "aria-label": text,
+    suppressHydrationWarning: true,
     ...(href && !isInternalLink ? { href, target } : {}),
     ...(isInternalLink ? { href } : {}),
     ...rest,
@@ -91,9 +92,15 @@ export default function AnimatedButton<As extends ElementType = "div">(
     return (
       <Tag {...tagProps}>
         {position === "previous" ? <> {children}</> : null}
-        <span className="btn-caption">
-          <div className="btn-anim__block">{text}</div>
-          <div className="btn-anim__block" aria-hidden="true">
+        <span className="btn-caption" suppressHydrationWarning>
+          <div className="btn-anim__block" suppressHydrationWarning>
+            {text}
+          </div>
+          <div
+            className="btn-anim__block"
+            aria-hidden="true"
+            suppressHydrationWarning
+          >
             {text}
           </div>
         </span>
@@ -106,9 +113,15 @@ export default function AnimatedButton<As extends ElementType = "div">(
     <>
       <Tag {...animatedTagProps}>
         {position === "previous" ? <> {children}</> : null}
-        <span className="btn-caption">
-          <div className="btn-anim__block">{letters}</div>
-          <div className="btn-anim__block" aria-hidden="true">
+        <span className="btn-caption" suppressHydrationWarning>
+          <div className="btn-anim__block" suppressHydrationWarning>
+            {letters}
+          </div>
+          <div
+            className="btn-anim__block"
+            aria-hidden="true"
+            suppressHydrationWarning
+          >
             {letters}
           </div>
         </span>

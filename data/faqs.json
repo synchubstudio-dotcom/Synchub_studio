@@ -1,30 +1,46 @@
 [
   {
-    "question": "What services do you offer?",
-    "answer": "We provide a comprehensive range of digital solutions, including website design and development, branding, digital marketing, e-commerce solutions, SEO, content creation, and ongoing support. Whether you need a new website, a brand refresh, or a digital marketing strategy, our team is equipped to help your business grow online."
+    "question": "What is SyncHUB.Studio and what makes your studio different?",
+    "answer": "SyncHUB.Studio is a digital design and creative technology studio operating globally. Guided by our motto, “Connecting ideas across the spectrum,” we unite brand strategy, human-centered UI/UX design, modern engineering (Next.js, React, Three.js), and intelligent AI solutions under one agile roof. Unlike traditional siloed agencies, we eliminate handoff friction to turn ambitious concepts into high-performance, market-defining digital products."
   },
   {
-    "question": "How long does a project take?",
-    "answer": "Timelines vary based on project complexity. A simple website may take a few weeks, while a full-scale brand identity or custom development project could take a few months. We provide clear deadlines and keep you updated at every stage."
+    "question": "What core services does SyncHUB.Studio provide?",
+    "answer": "We deliver full-spectrum digital services across four core pillars: 1) Strategy & Branding (brand identity, logo systems, visual guidelines, and brand architecture); 2) UI/UX & Product Design (web and mobile application design, interactive prototypes, and design systems); 3) Engineering & Web Development (production-grade Next.js/React websites, 3D interactive experiences with Three.js, e-commerce, custom APIs, and scalable backends); and 4) AI & Modern Tech (workflow automation, smart model integrations, and performance engineering)."
   },
   {
-    "question": "Do you work with businesses of all sizes?",
-    "answer": "Yes! We collaborate with startups, small businesses, and large enterprises across various industries. No matter your company's size or stage, we tailor our services to meet your specific needs and goals."
+    "question": "What does your project workflow and process look like?",
+    "answer": "Our process is agile, collaborative, and structured across four transparent phases: 1) Discovery & Strategy — deep-diving into your business goals, target audience, and architecture; 2) Design & Prototyping — creating interactive Figma wireframes and high-fidelity prototypes with iterative feedback; 3) Development & Testing — writing clean, modular code with weekly staging demos; and 4) Launch & Optimization — thorough QA, performance optimization, SEO audit, and smooth deployment."
   },
   {
-    "question": "Can you redesign my existing website?",
-    "answer": "Absolutely. We specialize in website redesigns to improve user experience, modernize your brand, and optimize performance. We'll work with you to understand your vision and business objectives, then transform your current site into a powerful digital asset."
+    "question": "How long does a typical project take from start to finish?",
+    "answer": "Project timelines depend on the scope and complexity of your requirements. A brand identity package or focused marketing website typically takes 2 to 4 weeks. A custom multi-page digital platform, web application, or 3D interactive site generally takes 4 to 8 weeks, while complex full-stack web platforms or SaaS MVPs take 8 to 12 weeks. We set clear milestones and delivery dates before beginning any work."
   },
   {
-    "question": "Can you help improve my website's search engine ranking?",
-    "answer": "Our SEO experts use proven strategies including keyword research, on-page optimization, link building, and content creation to boost your website's visibility and ranking on search engines like Google."
+    "question": "Do you work with early-stage startups as well as established businesses?",
+    "answer": "Yes! We collaborate with ambitious startups building their initial MVPs, fast-growing scaleups looking to elevate their brand authority, and established enterprises needing to modernize legacy platforms or deploy interactive 3D web experiences. We adapt our sprint cycles and engagement models to fit your organization's goals."
   },
   {
-    "question": "Do you provide ongoing support and maintenance?",
-    "answer": "Yes! We offer ongoing website maintenance, performance monitoring, and digital marketing support to ensure your online presence remains effective and up-to-date. Our support packages can be tailored to your needs."
+    "question": "Can you redesign or modernize our existing website or product?",
+    "answer": "Absolutely. We specialize in transforming outdated websites and software into modern, high-converting digital experiences. We conduct UX, conversion, and performance audits to identify bottlenecks, then completely re-engineer the platform using modern frameworks like Next.js and React with blazing-fast load speeds, mobile responsiveness, and modern aesthetics."
   },
   {
-    "question": "How do we get started?",
-    "answer": "Getting started is easy! Simply contact us through our website or give us a call. We'll schedule a discovery call to discuss your goals, challenges, and project requirements. From there, we'll provide a proposal outlining our recommended approach, timeline, and next steps."
+    "question": "What technologies and tools do you use?",
+    "answer": "We prioritize modern, scalable, and secure technologies. Our primary engineering stack includes Next.js, React, TypeScript, Tailwind CSS, Three.js, Node.js, and headless CMS platforms. For design, our studio works extensively in Figma with structured design systems, coupled with Adobe Creative Suite for brand visual assets and 3D rendering tools."
+  },
+  {
+    "question": "How do pricing, contracts, and payments work?",
+    "answer": "We maintain complete transparency with no hidden surprises. Most project engagements are quoted on a milestone-based fixed price with clearly defined deliverables split across kickoff, design approval, and final launch milestones. For ongoing product design and feature engineering, we also provide dedicated monthly studio retainers."
+  },
+  {
+    "question": "Do you offer post-launch maintenance, hosting, and ongoing support?",
+    "answer": "Yes, our relationship continues well after launch. We offer ongoing maintenance and growth packages that cover uptime monitoring, framework and security updates, performance tuning, SEO monitoring, and continuous UI/UX enhancements. We also assist with cloud deployment on Vercel, AWS, or your preferred hosting provider."
+  },
+  {
+    "question": "Who owns the intellectual property, design files, and source code?",
+    "answer": "You own 100% of the work. Upon completion of final project payments, all intellectual property rights, source code repositories, Figma design files, brand assets, and technical documentation are transferred entirely to your organization with zero vendor lock-in."
+  },
+  {
+    "question": "How do we get started on a project with SyncHUB.Studio?",
+    "answer": "Getting started is simple: Reach out through our Contact page or email us directly at hello@synchub.studio. We will schedule a discovery call within 24 hours to explore your goals, discuss timelines and budget, and provide a comprehensive proposal outlining our recommended approach."
   }
 ]

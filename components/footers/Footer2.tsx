@@ -172,20 +172,22 @@ export default function Footer2({
                 </ul>
               </div>
               {/* links */}
-              <div className="footer-blocks__links anim-uni-in-up">
+              <div className="footer-blocks__links">
                 <AnimatedButton
+                  key="privacy-policy"
                   text="Privacy Policy"
                   as={"a"}
                   className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                  href="#"
+                  href="/privacy-policy"
                 >
                   <i className="ph ph-arrow-right" />
                 </AnimatedButton>
                 <AnimatedButton
-                  text="Terms &amp; conditions"
+                  key="terms-conditions"
+                  text="Terms & conditions"
                   as={"a"}
                   className="btn btn-line-xsmall btn-muted slide-right anim-no-delay"
-                  href="#"
+                  href="/terms-conditions"
                 >
                   <i className="ph ph-arrow-right" />
                 </AnimatedButton>
@@ -313,7 +315,7 @@ export default function Footer2({
                 </div>
               </div>
               {/* links */}
-              <div className="footer-blocks__links anim-uni-in-up">
+              <div className="footer-blocks__links">
                 <p className="t-xsmall t-muted">
                   <a className="no-effect" href="/">
                     SyncHUB.Studio

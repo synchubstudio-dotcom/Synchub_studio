@@ -8,12 +8,17 @@ import ScrollTop from "@/components/scroll/ScrollTop";
 import ScrollToTopOnRouteChange from "@/components/scroll/ScrollToTopOnRouteChange";
 
 import React, { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 interface ClientLayoutProps {
   children: React.ReactNode;
 }
 
 export default function ClientLayout({ children }: ClientLayoutProps) {
+  const pathname = usePathname();
+  const isEmailRoute =
+    pathname?.startsWith("/email-template") ||
+    pathname?.startsWith("/offer-email");
   useEffect(() => {
     let originalTitle = document.title;
 
@@ -43,6 +48,10 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
       window.removeEventListener("focus", handleFocus);
     };
   }, []);
+  if (isEmailRoute) {
+    return <>{children}</>;
+  }
+
   return (
     <>
       <MobileMenu />

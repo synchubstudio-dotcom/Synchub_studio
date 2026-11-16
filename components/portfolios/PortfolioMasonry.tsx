@@ -35,9 +35,8 @@ export default function PortfolioMasonry() {
                     key={index}
                     className="col-12 col-xl-6 mxd-project-item mxd-projects-masonry__item"
                   >
-                    <Link
+                    <div
                       className="mxd-project-item__media masonry-media"
-                      href={`/project-details`}
                     >
                       <BackgroundParallax
                         className={`mxd-project-item__preview masonry-preview ${item.previewClass} parallax-img-small`}
@@ -52,12 +51,12 @@ export default function PortfolioMasonry() {
                           </span>
                         ))}
                       </div>
-                    </Link>
+                    </div>
                     <div className="mxd-project-item__promo masonry-promo">
                       <div className="mxd-project-item__name">
-                        <Link href={`/project-details`}>
+                        <div className="mxd-project-item__title">
                           <span>{item.title}</span> {item.description}
-                        </Link>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -62,7 +62,7 @@ export default function ProjectsMarqueeSlider() {
             {projects6.map((item, idx) => {
               const src = item.src;
 
-              const href = item.id ? `/project-details` : "/project-details";
+              const href = "/works-simple";
               return (
                 <div
                   key={idx}

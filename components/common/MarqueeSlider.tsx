@@ -16,7 +16,7 @@ export default function MarqueeSlider() {
             {projects6.map((item, idx) => (
               <React.Fragment key={idx}>
                 <div className="marquee__item image">
-                  <Link className="marquee__link" href={`/project-details`}>
+                  <Link className="marquee__link" href={`/works-simple`}>
                     <Image
                       alt="Image"
                       src={item.src}
@@ -43,7 +43,7 @@ export default function MarqueeSlider() {
             {projects7.map((item, idx) => (
               <React.Fragment key={idx}>
                 <div className="marquee__item image">
-                  <Link className="marquee__link" href={`/project-details`}>
+                  <Link className="marquee__link" href={`/works-simple`}>
                     <Image
                       alt="Image"
                       src={item.src}

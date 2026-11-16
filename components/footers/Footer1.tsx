@@ -17,17 +17,13 @@ export default function Footer1() {
         {
           title: "Portfolio",
           links: [
-            { label: "Works simple", href: "/works-simple" },
-            { label: "Works masonry", href: "/works-masonry" },
-            { label: "Project details", href: "/project-details" },
+            { label: "Portfolio", href: "/works-simple" },
           ],
         },
         {
-          title: "Insights pages",
+          title: "Insights",
           links: [
-            { label: "Blog standard", href: "/blog-standard" },
-            { label: "Blog creative", href: "/blog-creative" },
-            { label: "Single post", href: "/blog-article" },
+            { label: "Blog", href: "/blog-article" },
           ],
         },
       ],

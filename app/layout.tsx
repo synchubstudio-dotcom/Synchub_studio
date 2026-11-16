@@ -1,7 +1,6 @@
 import "../public/css/styles.css";
 import ClientLayout from "@/components/layout/ClientLayout";
 import { Metadata } from "next";
-import Script from "next/script";
 import {
   constructMetadata,
   getOrganizationSchema,
@@ -47,9 +46,8 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en" className="no-touch">
       <head>
-        <Script
+        <script
           id="theme-script"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{ __html: setColorSchemeScript }}
         />
         <script

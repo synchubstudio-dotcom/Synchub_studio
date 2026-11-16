@@ -11,12 +11,21 @@ export default function Faqs() {
   const faqCotentRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [faqContentHeights, setfaqContentHeights] = useState<number[]>([]);
   const [activeFaq, setActiveFaq] = useState(-1);
+
   useEffect(() => {
-    // Get scrollHeight for each submenu and store in state
-    const heights = faqCotentRefs.current.map((submenu) =>
-      submenu ? submenu.scrollHeight : 0
-    );
-    setfaqContentHeights(heights);
+    const updateHeights = () => {
+      const heights = faqCotentRefs.current.map((submenu) =>
+        submenu ? submenu.scrollHeight : 0
+      );
+      setfaqContentHeights(heights);
+    };
+
+    updateHeights();
+    window.addEventListener("resize", updateHeights);
+    if (typeof document !== "undefined" && document.fonts) {
+      document.fonts.ready.then(updateHeights);
+    }
+    return () => window.removeEventListener("resize", updateHeights);
   }, []);
   return (
     <>
@@ -61,13 +70,10 @@ export default function Faqs() {
                   <div className="mxd-block__content">
                     <div className="mxd-block__inner-headline">
                       <h1 className="inner-headline__title headline-img-before headline-img-02 loading__item">
-                        Everything you need to know
+                        Frequently Asked Questions
                       </h1>
                       <p className="inner-headline__text t-large t-bright loading__item">
-                        Have questions? We&apos;ve got the answers! Here,
-                        you&apos;ll find clear and concise information about our
-                        services, process, and what to expect when working with
-                        us. If you need more details, feel free to reach out!
+                        Have questions about how SyncHUB.Studio works? Explore clear details about our design and tech services, agile engineering process, project timelines, and what to expect when building digital products with us.
                       </p>
                     </div>
                   </div>
@@ -116,12 +122,15 @@ export default function Faqs() {
                             className="mxd-accordion__content"
                             style={{
                               display: "block",
-                              height:
+                              maxHeight:
                                 activeFaq === idx
-                                  ? `calc(${faqContentHeights[idx]}px + 3.4rem)`
+                                  ? `calc(${faqContentHeights[idx] || 400}px + 4rem)`
                                   : 0,
+                              opacity: activeFaq === idx ? 1 : 0,
                               paddingBottom: activeFaq === idx ? "3.4rem" : 0,
-                              transition: "all 0.3s ease",
+                              overflow: "hidden",
+                              transition:
+                                "max-height 0.4s ease, opacity 0.3s ease, padding-bottom 0.3s ease",
                             }}
                             ref={(el) => {
                               faqCotentRefs.current[idx] = el;

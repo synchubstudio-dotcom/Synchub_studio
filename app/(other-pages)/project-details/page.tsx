@@ -29,7 +29,7 @@ export default function ProjectDetailsPage() {
           <div className="mxd-container grid-container">
             <Challages />
             <Solutions />
-            <Feedback />
+            {/* <Feedback /> */}
             <NextPrevNavigation />
           </div>
         </div>

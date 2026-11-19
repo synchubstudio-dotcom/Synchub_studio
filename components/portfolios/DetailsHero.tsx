@@ -26,7 +26,8 @@ export default function DetailsHero() {
               <div className="col-12 col-xl-10 mxd-grid-item no-margin">
                 <div className="mxd-block__content">
                   <div className="mxd-block__inner-headline loading__item">
-                    <h1 className="inner-headline__title">Studio template</h1>
+                    <h1 className="inner-headline__title">ARCH-TECH</h1>
+                    <p className="t-large t-bright anim-uni-in-up">Architecture & Interior Design Studio</p>
                   </div>
                 </div>
               </div>
@@ -41,23 +42,28 @@ export default function DetailsHero() {
               <div className="col-12 col-xl-6 mxd-grid-item no-margin">
                 <div className="inner-headline__paragraph loading__item">
                   <p>
-                    Inspiring ideas, creative insights, and the latest in design
-                    and tech. Fueling innovation for your digital journey.
+                    A digital experience crafted for an architecture studio where structural precision meets creative vision. The website brings together architectural projects, interior spaces, and design philosophy through a visually immersive and contemporary interface.
                   </p>
                 </div>
                 <div className="inner-headline__data">
                   <div className="mxd-data-list">
                     <div className="container-fluid p-0">
                       <div className="row g-0">
-                        <div className="col-12 col-md-6 col-xl-5 mxd-data-list__column loading__item">
+                        <div className="col-12 col-md-6 col-xl-6 mxd-data-list__column loading__item">
                           <div className="mxd-data-list__item">
                             <p className="mxd-data-list__name">Client</p>
-                            <p className="mxd-data-list__content">Mix Design</p>
+                            <p className="mxd-data-list__content">ARCH-TECH Studio</p>
                           </div>
                           <div className="mxd-data-list__item">
                             <p className="mxd-data-list__name">Services</p>
                             <p className="mxd-data-list__content">
-                              Web development
+                              UI/UX Design, Website Development
+                            </p>
+                          </div>
+                          <div className="mxd-data-list__item">
+                            <p className="mxd-data-list__name">Technologies</p>
+                            <p className="mxd-data-list__content">
+                              Next.js, React, Tailwind CSS
                             </p>
                           </div>
                         </div>
@@ -65,16 +71,23 @@ export default function DetailsHero() {
                           <div className="mxd-data-list__item">
                             <p className="mxd-data-list__name">Industries</p>
                             <p className="mxd-data-list__content">
-                              HTML template
+                              Architecture, Interior Design
                             </p>
                           </div>
                           <div className="mxd-data-list__item">
-                            <p className="mxd-data-list__name">Date</p>
+                            <p className="mxd-data-list__name">Project type</p>
                             <p className="mxd-data-list__content">
-                              January 2025
+                              Corporate Website
+                            </p>
+                          </div>
+                          <div className="mxd-data-list__item">
+                            <p className="mxd-data-list__name">Category</p>
+                            <p className="mxd-data-list__content">
+                              Web Design, UI/UX Design, Development
                             </p>
                           </div>
                         </div>
+                        
                       </div>
                     </div>
                   </div>

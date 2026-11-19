@@ -17,7 +17,7 @@ export default function NotFoundPage() {
         <div className="mxd-floating-img__item mxd-move">
           <Image
             alt="Image"
-            src="/img/backgrounds/900x900_err-01.webp"
+            src="/web/800x800_card-image-01.webp"
             width={900}
             height={900}
           />

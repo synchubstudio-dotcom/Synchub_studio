@@ -19,16 +19,13 @@ export default function Solutions() {
               <div className="mxd-project__content">
                 <div className="mxd-project__paragraph medium-text">
                   <p className="anim-uni-in-up">
-                    Orci varius natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Quisque ut arcu pulvinar,
-                    rhoncus libero id, lobortis metus. Morbi tristique dolor sit
-                    amet turpis faucibus malesuada.
+                    We designed and developed a modern digital experience that reflects the studio's architectural approach through clean layouts, bold typography, and carefully curated imagery.
                   </p>
                   <p className="anim-uni-in-up">
-                    Morbi non ipsum vel risus scelerisque sagittis nec a ipsum.
-                    Nulla odio neque, feugiat a arcu et, tristique cursus diam.
-                    Duis consectetur massa nibh, ut rhoncus nibh vestibulum in.
-                    Sed imperdiet metus sed arcu efficitur posuere.
+                    The visual language combines a deep charcoal background with vibrant magenta accents, creating a distinctive identity while keeping the architectural photography at the center of attention.
+                  </p>
+                  <p className="anim-uni-in-up">
+                    The website introduces a structured project showcase, clear service presentation, and intuitive navigation to help visitors discover the studio's work and connect with the team.
                   </p>
                 </div>
               </div>
@@ -38,7 +35,7 @@ export default function Solutions() {
       </div>
       {/* Project Block - Solution Description with H2 Title and Paragraph End */}
       {/* Project Block - Parallax Fullwidth Image Start */}
-      <div className="mxd-project__block mxd-grid-item no-margin">
+      <div className="mxd-project__block mxd-grid-item">
         <div className="mxd-divider">
           <BackgroundParallax
             scale={1.5}
